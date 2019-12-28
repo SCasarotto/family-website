@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense, lazy } from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Front = lazy(() => import('layout/front/ContentWrapper'))
+const Admin = lazy(() => import('layout/admin/ContentWrapper'))
+
+export const App = () => {
+	return (
+		<Suspense fallback={<div />}>
+			<Switch>
+				<Route path='/admin/' component={Admin} />
+				<Route path='/' component={Front} />
+			</Switch>
+		</Suspense>
+	)
 }
-
-export default App;

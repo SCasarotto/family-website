@@ -3,6 +3,9 @@ import Slider from 'react-slick'
 
 export const HeaderWrapper = styled.div`
 	position: relative;
+	/* This is a hack to get ride of the bottom white space. */
+	overflow: hidden;
+	max-height: 100vh;
 `
 export const HeaderSlider = styled(Slider)`
 	.slick-dots {

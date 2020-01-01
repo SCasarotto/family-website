@@ -1,48 +1,48 @@
 import React from 'react'
 import { Route, Switch, RouteChildrenProps } from 'react-router-dom'
-// import { TransitionGroup, CSSTransition } from 'react-transition-group'
+import { useTransition, animated } from 'react-spring'
 
 // import { NotFound } from 'pages/NotFound'
 
-// import { Navbar } from 'layout/Front/Navbar'
-// import { Footer } from 'layout/Front/Footer'
+import { Navbar } from 'layout/front/Navbar'
+// import { Footer } from 'layout/front/Footer'
 
 import { Home } from 'pages/front/Home'
-// import { SignIn } from 'pages/Front/SignIn'
-// import { ForgotPassword } from 'pages/Front/ForgotPassword'
-// import { EmailActions } from 'pages/Front/EmailActions'
+import { OurStory } from 'pages/front/OurStory'
+import { BridalParty } from 'pages/front/BridalParty'
+import { EventDetails } from 'pages/front/EventDetails'
+import { Registery } from 'pages/front/Registery'
+import { RSVP } from 'pages/front/RSVP'
 
 import { MainPanel, FrontContentWrapper } from './styledComponents'
 
 interface Props extends RouteChildrenProps {}
-export const ContentWrapper: React.FC<Props> = () => {
-	// const { location } = props
-	// const locationArray = location.pathname.split('/')
-	// const locationKey = locationArray.slice(1, locationArray.length).join('/')
+export const ContentWrapper: React.FC<Props> = (props) => {
+	const { location } = props
+	const transitions = useTransition(location, (location) => location.pathname, {
+		from: { opacity: 0 },
+		enter: { opacity: 1 },
+		leave: { opacity: 0 },
+		config: { mass: 10, friction: 60 },
+	})
 	return (
 		<MainPanel>
-			{/* <Navbar /> */}
+			<Navbar />
 			<FrontContentWrapper>
-				{/* <TransitionGroup>
-					<CSSTransition
-						key={locationKey}
-						timeout={{ enter: 500, exit: 0 }}
-						classNames='fade'
-						appear
-					> */}
-				{/* <div className='AnimationWrapper'> */}
-				<Switch>
-					<Route exact path='/' component={Home} />
+				{transitions.map(({ item, props, key }) => (
+					<animated.div key={key} style={props}>
+						<Switch location={item}>
+							<Route exact path='/' component={Home} />
+							<Route path='/our-story' component={OurStory} />
+							<Route path='/bridal-party' component={BridalParty} />
+							<Route path='/event-details' component={EventDetails} />
+							<Route path='/registery' component={Registery} />
+							<Route path='/rsvp' component={RSVP} />
 
-					{/* <Route path='/signIn' component={SignIn} /> */}
-					{/* <Route path='/forgot-password' component={ForgotPassword} /> */}
-					{/* <Route path='/auth-actions' component={EmailActions} /> */}
-
-					{/* <Route component={NotFound} /> */}
-				</Switch>
-				{/* </div> */}
-				{/* </CSSTransition>
-				</TransitionGroup> */}
+							{/* <Route component={NotFound} /> */}
+						</Switch>
+					</animated.div>
+				))}
 			</FrontContentWrapper>
 			{/* <Footer /> */}
 		</MainPanel>

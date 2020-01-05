@@ -31,3 +31,54 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
+
+export const PartyContainer = styled.div`
+	padding-top: 100px;
+`
+export const PartyContent = styled.div`
+	max-width: 1200px;
+	margin: 0px auto;
+	display: flex;
+	justify-content: center;
+	padding: 0px 30px;
+`
+export const PartyLeftColumn = styled.div`
+	width: 50%;
+	padding-right: 20px;
+`
+export const PartyRightColumn = styled.div`
+	width: 50%;
+	padding-left: 20px;
+`
+export const PartyWrapper = styled.div`
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
+`
+export const PartyImage = styled.img`
+	width: 200px;
+	height: 200px;
+	display: block;
+	border-radius: 50%;
+	margin-bottom: 15px;
+`
+export const PartyName = styled.h3`
+	font-size: 32px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	line-height: 1.2;
+`
+export const PartyTitle = styled.h5`
+	font-size: 22px;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	line-height: 1.25;
+`
+export const PartyCopy = styled.p`
+	font-size: 16px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	line-height: 1.5;
+`

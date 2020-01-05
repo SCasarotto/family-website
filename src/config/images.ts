@@ -1,4 +1,13 @@
 export const splashBackground = require('assets/images/splash-background.jpg')
+export const bridalParty = {
+	austin: require('assets/images/bridalParty/austin.jpg'),
+	chad: require('assets/images/bridalParty/chad.jpg'),
+	ellinor: require('assets/images/bridalParty/ellinor.jpg'),
+	elliot: require('assets/images/bridalParty/elliot.jpg'),
+	hayden: require('assets/images/bridalParty/hayden.jpg'),
+	mark: require('assets/images/bridalParty/mark.jpg'),
+	parker: require('assets/images/bridalParty/parker.jpg'),
+}
 export const processedImages = [
 	{
 		thumb: require('assets/images/gallery/processed/courtney_stuart_engaged_0001-thumb.jpg'),

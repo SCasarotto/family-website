@@ -1,16 +1,16 @@
 import React from 'react'
 
-import { Background, CopyContainer, Title } from './styledComponents'
+import { Header, HeaderContent, HeaderTitle } from './styledComponents'
 import { PageWrapper } from 'components'
 
 export const Registery = () => {
 	return (
 		<PageWrapper>
-			<Background>
-				<CopyContainer>
-					<Title>Registery</Title>
-				</CopyContainer>
-			</Background>
+			<Header>
+				<HeaderContent>
+					<HeaderTitle>We are so blessed</HeaderTitle>
+				</HeaderContent>
+			</Header>
 		</PageWrapper>
 	)
 }

@@ -1,16 +1,16 @@
 import React from 'react'
 
-import { Background, CopyContainer, Title } from './styledComponents'
+import { Header, HeaderContent, HeaderTitle } from './styledComponents'
 import { PageWrapper } from 'components'
 
 export const RSVP = () => {
 	return (
 		<PageWrapper>
-			<Background>
-				<CopyContainer>
-					<Title>RSVP</Title>
-				</CopyContainer>
-			</Background>
+			<Header>
+				<HeaderContent>
+					<HeaderTitle>We hope to see you there</HeaderTitle>
+				</HeaderContent>
+			</Header>
 		</PageWrapper>
 	)
 }

@@ -5,6 +5,7 @@ export const bridalParty = {
 	ellinor: require('assets/images/bridalParty/ellinor.jpg'),
 	elliot: require('assets/images/bridalParty/elliot.jpg'),
 	hayden: require('assets/images/bridalParty/hayden.jpg'),
+	madeline: require('assets/images/bridalParty/madeline.jpg'),
 	mark: require('assets/images/bridalParty/mark.jpg'),
 	parker: require('assets/images/bridalParty/parker.jpg'),
 }

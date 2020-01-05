@@ -38,22 +38,25 @@ export const PartyContainer = styled.div`
 export const PartyContent = styled.div`
 	max-width: 1200px;
 	margin: 0px auto;
+	padding: 0px 30px;
+`
+export const PartyRow = styled.div`
 	display: flex;
 	justify-content: center;
-	padding: 0px 30px;
 `
 export const PartyLeftColumn = styled.div`
 	width: 50%;
 	padding-right: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 30px;
 `
 export const PartyRightColumn = styled.div`
 	width: 50%;
 	padding-left: 20px;
-`
-export const PartyWrapper = styled.div`
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	margin-bottom: 30px;
 `
@@ -81,4 +84,6 @@ export const PartyCopy = styled.p`
 	margin-top: 0px;
 	margin-bottom: 0px;
 	line-height: 1.5;
+	text-align: center;
+	max-width: 500px;
 `

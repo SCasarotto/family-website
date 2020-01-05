@@ -1,4 +1,7 @@
 export const splashBackground = require('assets/images/splash-background.jpg')
+export const pageHeaders = {
+	ourStory: require('assets/images/gallery/dating/44613796_10217356987458930_3867663452147286016_o.jpg'),
+}
 export const bridalParty = {
 	austin: require('assets/images/bridalParty/austin.jpg'),
 	chad: require('assets/images/bridalParty/chad.jpg'),

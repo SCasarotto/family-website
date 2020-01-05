@@ -105,11 +105,11 @@ export const BridalParty = () => {
 							<PartyTitle>Bridesmaid</PartyTitle>
 							<PartyCopy>
 								Courtney and Stef first met freshman year on the Augustana Vikettes,
-								but their paths didn’t cross again until Courtney switched majors to
-								Communication Sciences & Disorders. Court and Stef ended up going to
-								Eastern Illinois University and rooming together during grad school
-								where they did everything together from being workout buddy to study
-								buddy.
+								but it wasn't until Courtney switched majors to communication
+								sciences and disorders that things fell more into place. They both
+								ended up going to Eastern Illinois University and rooming together
+								during grad school where they did everything together from being
+								workout buddiees to study buddies.
 							</PartyCopy>
 						</PartyRightColumn>
 					</PartyRow>

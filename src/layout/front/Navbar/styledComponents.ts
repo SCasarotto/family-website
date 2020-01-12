@@ -33,7 +33,7 @@ export const NavLink = styled(NL)`
 	font-size: 18px;
 	color: #ffffff;
 	font-weight: 400;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 	text-align: center;
 	text-decoration: none;
 `
@@ -44,7 +44,7 @@ export const Name = styled.div`
 	text-align: center;
 	font-family: 'Great Vibes', cursive;
 	font-weight: 400;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
 	padding: 0px 15px;
 	font-size: 50px;
 	flex: 1;

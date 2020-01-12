@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { TESegmentedGroup } from 'react-tec'
 
 import { pageHeaders } from 'config/images'
 
@@ -29,5 +30,36 @@ export const HeaderTitle = styled.h1`
 	}
 	@media only screen and (max-width: 500px) {
 		font-size: 44px;
+	}
+`
+export const GallerySection = styled.div`
+	padding-top: 50px;
+	padding-bottom: 50px;
+`
+export const GalleryContainer = styled.div`
+	max-width: 1400px;
+	margin: 0px auto;
+	padding-left: 30px;
+	padding-right: 30px;
+`
+export const GalleryHeader = styled.div`
+	margin-bottom: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`
+export const GalleryTabs = styled(TESegmentedGroup)`
+	.TESegmentedGroupSegmentedContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.TESegmentedGroupSegmentedLabelWrapper label {
+			font-size: 20px;
+			border-radius: 5px;
+			margin-left: 8px;
+			margin-right: 8px;
+			padding: 13px 15px 10px;
+		}
 	}
 `

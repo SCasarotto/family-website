@@ -34,6 +34,7 @@ export const Home = () => {
 					slidesToShow={1}
 					slidesToScroll={1}
 					arrows={false}
+					pauseOnHover={false}
 					autoplay
 					fade
 				>

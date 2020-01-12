@@ -31,3 +31,15 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
+export const ComingSoonWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+`
+export const ComingSoonCopy = styled.p`
+	font-size: 36px;
+	text-align: center;
+	color: ${(props) => props.theme.primary};
+	opacity: 0.5;
+`

@@ -86,4 +86,5 @@ export const PartyCopy = styled.p`
 	line-height: 1.5;
 	text-align: center;
 	max-width: 500px;
+	display: none;
 `

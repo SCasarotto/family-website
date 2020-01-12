@@ -35,7 +35,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Courtney Tate' />
+							<PartyImage src={bridalParty.courtney} alt='Courtney Tate' />
 							<PartyName>Courtney Tate</PartyName>
 							<PartyTitle>Bride</PartyTitle>
 							<PartyCopy></PartyCopy>
@@ -147,15 +147,15 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.ellinor} alt='Ellinor Casarotto' />
-							<PartyName>Ellinor Casarotto</PartyName>
+							<PartyImage src={bridalParty.eleanor} alt='Eleanor Casarotto' />
+							<PartyName>Eleanor Casarotto</PartyName>
 							<PartyTitle>Flower Girl</PartyTitle>
 							<PartyCopy></PartyCopy>
 						</PartyRightColumn>
 					</PartyRow>
 					<PartyRow>
 						<PartyLeftColumn>
-							<PartyImage src={bridalParty.hayden} alt='Andrew Tate' />
+							<PartyImage src={bridalParty.andrew} alt='Andrew Tate' />
 							<PartyName>Andrew Tate</PartyName>
 							<PartyTitle>Usher</PartyTitle>
 							<PartyCopy></PartyCopy>

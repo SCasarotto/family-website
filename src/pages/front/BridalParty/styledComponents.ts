@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
-import { splashBackground } from 'config/images'
+import { pageHeaders } from 'config/images'
 
 export const Header = styled.div`
 	height: 60vh;
 	min-height: 400px;
-	background-image: url(${splashBackground});
+	background-image: url(${pageHeaders.bridalParty});
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;

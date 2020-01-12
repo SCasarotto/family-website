@@ -4,13 +4,19 @@ export const pageHeaders = {
 }
 export const bridalParty = {
 	austin: require('assets/images/bridalParty/austin.jpg'),
+	becca: require('assets/images/bridalParty/becca.jpg'),
+	blair: require('assets/images/bridalParty/blair.jpg'),
 	chad: require('assets/images/bridalParty/chad.jpg'),
+	diana: require('assets/images/bridalParty/diana.jpg'),
 	ellinor: require('assets/images/bridalParty/ellinor.jpg'),
 	elliot: require('assets/images/bridalParty/elliot.jpg'),
 	hayden: require('assets/images/bridalParty/hayden.jpg'),
 	madeline: require('assets/images/bridalParty/madeline.jpg'),
 	mark: require('assets/images/bridalParty/mark.jpg'),
 	parker: require('assets/images/bridalParty/parker.jpg'),
+	stef: require('assets/images/bridalParty/stef.jpg'),
+	stuart: require('assets/images/bridalParty/stuart.jpg'),
+	sinclaire: require('assets/images/bridalParty/sinclaire.jpg'),
 }
 export const processedImages = [
 	{

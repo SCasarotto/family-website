@@ -61,8 +61,8 @@ export const PartyRightColumn = styled.div`
 	margin-bottom: 30px;
 `
 export const PartyImage = styled.img`
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	display: block;
 	border-radius: 50%;
 	margin-bottom: 15px;

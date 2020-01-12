@@ -29,7 +29,7 @@ export const BridalParty = () => {
 				<PartyContent>
 					<PartyRow>
 						<PartyLeftColumn>
-							<PartyImage src={bridalParty.hayden} alt='Stuart Casarotto' />
+							<PartyImage src={bridalParty.stuart} alt='Stuart Casarotto' />
 							<PartyName>Stuart Casarotto</PartyName>
 							<PartyTitle>Groom</PartyTitle>
 							<PartyCopy></PartyCopy>
@@ -49,7 +49,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Becca Shultz' />
+							<PartyImage src={bridalParty.becca} alt='Becca Shultz' />
 							<PartyName>Becca Shultz</PartyName>
 							<PartyTitle>Maid of Honor</PartyTitle>
 							<PartyCopy>
@@ -68,7 +68,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Diana Koranda' />
+							<PartyImage src={bridalParty.diana} alt='Diana Koranda' />
 							<PartyName>Diana Koranda</PartyName>
 							<PartyTitle>Bridesmaid</PartyTitle>
 							<PartyCopy>
@@ -107,7 +107,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Stefanie McWilliams' />
+							<PartyImage src={bridalParty.stef} alt='Stefanie McWilliams' />
 							<PartyName>Stefanie McWilliams</PartyName>
 							<PartyTitle>Bridesmaid</PartyTitle>
 							<PartyCopy>
@@ -128,7 +128,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Blair Casarotto' />
+							<PartyImage src={bridalParty.blair} alt='Blair Casarotto' />
 							<PartyName>Blair Casarotto</PartyName>
 							<PartyTitle>Bridesmaid</PartyTitle>
 							<PartyCopy>
@@ -161,7 +161,7 @@ export const BridalParty = () => {
 							<PartyCopy></PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
-							<PartyImage src={bridalParty.hayden} alt='Andrew Tate' />
+							<PartyImage src={bridalParty.sinclaire} alt='Andrew Tate' />
 							<PartyName>Sinclaire Casarotto</PartyName>
 							<PartyTitle>Usher</PartyTitle>
 							<PartyCopy></PartyCopy>

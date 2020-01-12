@@ -54,7 +54,9 @@ export const Gallery: React.FC<Props> = (props) => {
 					>
 						<Carousel
 							views={images.map((data) => ({
-								src: data.full,
+								download: data.full,
+								source: data.full,
+								thumbnail: data.thumb,
 							}))}
 							currentIndex={lightBoxIndex}
 							trackProps={{

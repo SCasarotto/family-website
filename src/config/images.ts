@@ -3,12 +3,14 @@ export const pageHeaders = {
 	ourStory: require('assets/images/gallery/ProposalEngagement/44613796_10217356987458930_3867663452147286016_o.jpg'),
 }
 export const bridalParty = {
+	andrew: require('assets/images/bridalParty/andrew.jpg'),
 	austin: require('assets/images/bridalParty/austin.jpg'),
 	becca: require('assets/images/bridalParty/becca.jpg'),
 	blair: require('assets/images/bridalParty/blair.jpg'),
 	chad: require('assets/images/bridalParty/chad.jpg'),
+	courtney: require('assets/images/bridalParty/courtney.jpg'),
 	diana: require('assets/images/bridalParty/diana.jpg'),
-	ellinor: require('assets/images/bridalParty/ellinor.jpg'),
+	eleanor: require('assets/images/bridalParty/eleanor.jpg'),
 	elliot: require('assets/images/bridalParty/elliot.jpg'),
 	hayden: require('assets/images/bridalParty/hayden.jpg'),
 	madeline: require('assets/images/bridalParty/madeline.jpg'),

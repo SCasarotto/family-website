@@ -2,16 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import { TEAppWrapper } from 'react-tec'
 
-import './index.css'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
+import 'rc-pagination/assets/index.css'
+
+import './index.css'
 
 import { App } from './App'
 import * as serviceWorker from './serviceWorker'
 
 const Root = () => {
 	return (
-		<TEAppWrapper>
+		<TEAppWrapper theme={{ primary: '#5a2d36' }}>
 			<App />
 		</TEAppWrapper>
 	)

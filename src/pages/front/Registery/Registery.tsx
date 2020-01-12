@@ -1,6 +1,12 @@
 import React from 'react'
 
-import { Header, HeaderContent, HeaderTitle } from './styledComponents'
+import {
+	Header,
+	HeaderContent,
+	HeaderTitle,
+	ComingSoonWrapper,
+	ComingSoonCopy,
+} from './styledComponents'
 import { PageWrapper } from 'components'
 
 export const Registery = () => {
@@ -11,6 +17,9 @@ export const Registery = () => {
 					<HeaderTitle>We are so blessed</HeaderTitle>
 				</HeaderContent>
 			</Header>
+			<ComingSoonWrapper>
+				<ComingSoonCopy>Check back soon for more details.</ComingSoonCopy>
+			</ComingSoonWrapper>
 		</PageWrapper>
 	)
 }

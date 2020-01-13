@@ -28,6 +28,16 @@ export const NavListItem = styled.li`
 	padding: 0px 15px;
 	margin: 0px;
 	list-style: none;
+
+	@media only screen and (max-width: 900px) {
+		padding: 0px 12px;
+	}
+	@media only screen and (max-width: 750px) {
+		padding: 0px 10px;
+	}
+	@media only screen and (max-width: 425px) {
+		padding: 0px 6px;
+	}
 `
 export const NavLink = styled(NL)`
 	font-size: 18px;
@@ -36,6 +46,17 @@ export const NavLink = styled(NL)`
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 	text-align: center;
 	text-decoration: none;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 17px;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);
+	}
+	@media only screen and (max-width: 750px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 425px) {
+		font-size: 14px;
+	}
 `
 export const Name = styled.div`
 	margin-top: 0px;
@@ -49,4 +70,14 @@ export const Name = styled.div`
 	font-size: 50px;
 	flex: 1;
 	white-space: nowrap;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 36px;
+	}
+	@media only screen and (max-width: 750px) {
+		font-size: 26px;
+	}
+	@media only screen and (max-width: 600px) {
+		display: none;
+	}
 `

@@ -60,6 +60,7 @@ export const GalleryTabs = styled(TESegmentedGroup)`
 			margin-left: 8px;
 			margin-right: 8px;
 			padding: 13px 15px 10px;
+			text-align: center;
 		}
 	}
 `

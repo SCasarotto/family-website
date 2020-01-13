@@ -35,11 +35,15 @@ export const ComingSoonWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 300px;
+	padding-top: 80px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
 `
 export const ComingSoonCopy = styled.p`
 	font-size: 36px;
 	text-align: center;
 	color: ${(props) => props.theme.primary};
 	opacity: 0.5;
+	line-height: 1.5;
 `

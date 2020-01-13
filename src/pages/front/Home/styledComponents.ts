@@ -40,7 +40,7 @@ export const HeaderCopyWrapper = styled.div`
 	pointer-events: none;
 `
 export const HeaderTitle = styled.h1`
-	font-size: 66px;
+	/* font-size: 66px; */
 	color: white;
 	line-height: 1.2;
 	text-align: center;
@@ -48,6 +48,15 @@ export const HeaderTitle = styled.h1`
 	margin-bottom: 0px;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 	color: #ffffff;
+
+	font-size: 6vw;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 10vw;
+	}
+	@media only screen and (max-width: 500px) {
+		font-size: 44px;
+	}
 `
 export const HeaderSubtitle = styled.p`
 	font-size: 18px;

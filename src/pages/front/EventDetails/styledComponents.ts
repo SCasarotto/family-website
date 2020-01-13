@@ -31,3 +31,21 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
+export const DetailsSection = styled.div`
+	padding-top: 80px;
+	padding-bottom: 50px;
+`
+export const DetailsContainer = styled.div`
+	max-width: 600px;
+	margin: 0px auto;
+	padding-left: 30px;
+	padding-right: 30px;
+`
+export const DetailsCopy = styled.p`
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 50px;
+	color: ${(props) => props.theme.darkerGray};
+`

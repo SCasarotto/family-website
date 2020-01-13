@@ -66,18 +66,43 @@ export const PartyImage = styled.img`
 	display: block;
 	border-radius: 50%;
 	margin-bottom: 15px;
+
+	@media only screen and (max-width: 900px) {
+		width: 200px;
+		height: 200px;
+	}
+	@media only screen and (max-width: 650px) {
+		width: 150px;
+		height: 150px;
+	}
 `
 export const PartyName = styled.h3`
 	font-size: 32px;
 	margin-top: 0px;
 	margin-bottom: 10px;
 	line-height: 1.2;
+	text-align: center;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 650px) {
+		font-size: 22px;
+	}
 `
 export const PartyTitle = styled.h5`
 	font-size: 22px;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	line-height: 1.25;
+	text-align: center;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: 650px) {
+		font-size: 16px;
+	}
 `
 export const PartyCopy = styled.p`
 	font-size: 16px;

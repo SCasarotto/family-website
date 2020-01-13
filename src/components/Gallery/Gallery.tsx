@@ -5,9 +5,10 @@ import { GalleryWrapper, GalleryThumbnail, GalleryPagination } from './styledCom
 interface Props {
 	images: { thumb: any; full: any }[]
 	pageSize: number
+	altPrefix: string
 }
 export const Gallery: React.FC<Props> = (props) => {
-	const { images, pageSize } = props
+	const { images, pageSize, altPrefix } = props
 
 	const [lightBoxOpen, setLightBoxOpen] = useState(false)
 	const [lightBoxIndex, setLightBoxIndex] = useState(0)
@@ -21,8 +22,8 @@ export const Gallery: React.FC<Props> = (props) => {
 					.map((data, index) => (
 						<GalleryThumbnail
 							src={data.thumb}
-							alt={`engagement ${index + 1}`}
-							key={`engagement_${index + 1}`}
+							alt={`${altPrefix ? altPrefix : 'gallery'} ${index + 1}`}
+							key={`${altPrefix ? altPrefix : 'gallery'}_${index + 1}`}
 							onClick={() => {
 								setLightBoxIndex(index + (currentPage - 1) * pageSize)
 								setLightBoxOpen(true)

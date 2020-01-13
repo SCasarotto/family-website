@@ -91,7 +91,7 @@ export const OurStory = () => {
 									dating. So the adventure began!
 								</p>
 							</CopyWrapper>
-							<Gallery pageSize={12} images={howWeMetImages} />
+							<Gallery pageSize={12} images={howWeMetImages} altPrefix='How We Met' />
 						</>
 					)}
 					{selectedViewTab === 'Through The Years' && (
@@ -131,7 +131,11 @@ export const OurStory = () => {
 									relationship would take the next step with our engagement!
 								</p>
 							</CopyWrapper>
-							<Gallery pageSize={12} images={datingThroughTheYearsImages} />
+							<Gallery
+								pageSize={12}
+								images={datingThroughTheYearsImages}
+								altPrefix='Through The Years'
+							/>
 						</>
 					)}
 					{selectedViewTab === 'The Proposal' && (
@@ -181,6 +185,7 @@ export const OurStory = () => {
 							<Gallery
 								pageSize={12}
 								images={[...proposalEngagementImages, ...processedImages]}
+								altPrefix='The Proposal'
 							/>
 						</>
 					)}

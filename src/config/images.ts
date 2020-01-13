@@ -2,7 +2,7 @@ export const splashBackground = require('assets/images/splash-background.jpg')
 export const pageHeaders = {
 	ourStory: require('assets/images/gallery/proposalEngagement-processed/44613796_10217356987458930_3867663452147286016_o.jpg'),
 	bridalParty: require('assets/images/gallery/processed/courtney_stuart_engaged_0087.jpg'),
-	registery: require('assets/images/gallery/processed/courtney_stuart_engaged_0008.jpg'),
+	registry: require('assets/images/gallery/processed/courtney_stuart_engaged_0008.jpg'),
 	eventDetails: require('assets/images/gallery/processed/courtney_stuart_engaged_0034.jpg'),
 	rsvp: require('assets/images/gallery/processed/courtney_stuart_engaged_0047.jpg'),
 }

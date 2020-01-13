@@ -30,7 +30,7 @@ export const Navbar = () => {
 						<NavLink to='/event-details'>Event Details</NavLink>
 					</NavListItem>
 					<NavListItem>
-						<NavLink to='/registery'>Registery</NavLink>
+						<NavLink to='/registry'>Registry</NavLink>
 					</NavListItem>
 					<NavListItem>
 						<NavLink to='rsvp'>RSVP</NavLink>

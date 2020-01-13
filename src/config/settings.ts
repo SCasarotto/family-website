@@ -30,12 +30,14 @@ const DEVELOPMENT = {
 	BASE_URL: 'http://localhost:3003',
 	dev: true,
 	apiDebugging: true,
+	firebasePerformance: false,
 	...DEVELOPMENT_FB,
 }
 const PRODUCTION = {
 	BASE_URL: 'https://www.rcmssoftware.com',
 	dev: false,
 	apiDebugging: false,
+	firebasePerformance: true,
 	...PRODUCTION_FB,
 }
 

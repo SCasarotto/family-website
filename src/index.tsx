@@ -1,6 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { TEAppWrapper } from 'react-tec'
+import firebase from 'firebase/app'
+import 'firebase/performance'
+import 'firebase/analytics'
+
+import { settings } from 'config/settings'
 
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
@@ -10,6 +15,21 @@ import './index.css'
 
 import { App } from './App'
 import * as serviceWorker from './serviceWorker'
+
+firebase.initializeApp({
+	apiKey: settings.FIREBASE_API_KEY,
+	authDomain: settings.FIREBASE_AUTH_DOMAIN,
+	databaseURL: settings.FIREBASE_DATABASE_URL,
+	projectId: settings.FIREBASE_PROJECT_ID,
+	storageBucket: settings.FIREBASE_STORAGE_BUCKET,
+	messagingSenderId: settings.FIREBASE_MESSAGING_SENDER_ID,
+	appId: settings.FIREBASE_APP_ID,
+	measurementId: settings.FIREBASE_MEASUREMENT_ID,
+})
+if (settings.firebasePerformance) {
+	firebase.performance()
+	firebase.analytics()
+}
 
 const Root = () => {
 	return (

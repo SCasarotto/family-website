@@ -19,6 +19,19 @@ export const GalleryThumbnail = styled.img`
 	:hover {
 		flex-shrink: 0;
 	}
+
+	@media only screen and (max-width: 900px) {
+		width: 180px;
+		height: 180px;
+	}
+	@media only screen and (max-width: 650px) {
+		width: 150px;
+		height: 150px;
+	}
+	@media only screen and (max-width: 500px) {
+		width: 125px;
+		height: 125px;
+	}
 `
 export const GalleryPagination = styled(Pagination)`
 	display: flex;

@@ -27,14 +27,14 @@ const PRODUCTION_FB = {
 // Configurations
 //
 const DEVELOPMENT = {
-	BASE_URL: 'http://localhost:3003',
+	BASE_URL: 'http://localhost:9999',
 	dev: true,
 	apiDebugging: true,
 	firebasePerformance: false,
 	...DEVELOPMENT_FB,
 }
 const PRODUCTION = {
-	BASE_URL: 'https://www.rcmssoftware.com',
+	BASE_URL: 'https://stuartandcourtney.com',
 	dev: false,
 	apiDebugging: false,
 	firebasePerformance: true,

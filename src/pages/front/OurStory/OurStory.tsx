@@ -11,7 +11,12 @@ import {
 	CopyWrapper,
 } from './styledComponents'
 import { PageWrapper, Gallery } from 'components'
-import { processedImages } from 'config/images'
+import {
+	processedImages,
+	howWeMetImages,
+	datingThroughTheYearsImages,
+	proposalEngagementImages,
+} from 'config/images'
 
 export const OurStory = () => {
 	const [selectedViewTab, setSelectedViewTab] = useState('How We Met')
@@ -86,7 +91,7 @@ export const OurStory = () => {
 									dating. So the adventure began!
 								</p>
 							</CopyWrapper>
-							<Gallery pageSize={12} images={processedImages} />
+							<Gallery pageSize={12} images={howWeMetImages} />
 						</>
 					)}
 					{selectedViewTab === 'Through The Years' && (
@@ -126,7 +131,7 @@ export const OurStory = () => {
 									relationship would take the next step with our engagement!
 								</p>
 							</CopyWrapper>
-							<Gallery pageSize={12} images={processedImages} />
+							<Gallery pageSize={12} images={datingThroughTheYearsImages} />
 						</>
 					)}
 					{selectedViewTab === 'The Proposal' && (
@@ -173,7 +178,10 @@ export const OurStory = () => {
 									life.
 								</p>
 							</CopyWrapper>
-							<Gallery pageSize={12} images={processedImages} />
+							<Gallery
+								pageSize={12}
+								images={[...proposalEngagementImages, ...processedImages]}
+							/>
 						</>
 					)}
 				</GalleryContainer>

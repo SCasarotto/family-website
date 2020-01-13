@@ -30,12 +30,14 @@ export const Gallery: React.FC<Props> = (props) => {
 						/>
 					))}
 			</GalleryWrapper>
-			<GalleryPagination
-				onChange={(page: number) => setCurrentPage(page)}
-				current={currentPage}
-				defaultPageSize={pageSize}
-				total={images.length}
-			/>
+			{images.length > pageSize && (
+				<GalleryPagination
+					onChange={(page: number) => setCurrentPage(page)}
+					current={currentPage}
+					defaultPageSize={pageSize}
+					total={images.length}
+				/>
+			)}
 			<ModalGateway>
 				{lightBoxOpen ? (
 					<Modal

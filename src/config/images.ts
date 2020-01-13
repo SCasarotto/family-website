@@ -1,6 +1,6 @@
 export const splashBackground = require('assets/images/splash-background.jpg')
 export const pageHeaders = {
-	ourStory: require('assets/images/gallery/ProposalEngagement/44613796_10217356987458930_3867663452147286016_o.jpg'),
+	ourStory: require('assets/images/gallery/proposalEngagement-processed/44613796_10217356987458930_3867663452147286016_o.jpg'),
 	bridalParty: require('assets/images/gallery/processed/courtney_stuart_engaged_0087.jpg'),
 	registery: require('assets/images/gallery/processed/courtney_stuart_engaged_0008.jpg'),
 	eventDetails: require('assets/images/gallery/processed/courtney_stuart_engaged_0034.jpg'),
@@ -24,6 +24,260 @@ export const bridalParty = {
 	stuart: require('assets/images/bridalParty/stuart.jpg'),
 	sinclaire: require('assets/images/bridalParty/sinclaire.jpg'),
 }
+export const howWeMetImages = [
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/10336805_10203863787137355_1064750449413518768_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/10336805_10203863787137355_1064750449413518768_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/10351655_10203863531770971_4410880948779823196_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/10351655_10203863531770971_4410880948779823196_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/10498380_10204413314035184_4123253727206791904_o-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/10498380_10204413314035184_4123253727206791904_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1238742_10203179660194609_197730551_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1238742_10203179660194609_197730551_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1476590_10202160504521386_1346921168_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1476590_10202160504521386_1346921168_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1480490_10202160504001373_1939943601_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1480490_10202160504001373_1939943601_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1487933_10152042459084197_896105200_o-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1487933_10152042459084197_896105200_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1622409_10204413321675375_1960478642807897893_o-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1622409_10204413321675375_1960478642807897893_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/1779339_10201412380301493_926536574_n-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/1779339_10201412380301493_926536574_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/IMG_0080-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/IMG_0080.JPG'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/IMG_0210-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/IMG_0210.JPG'),
+	},
+	{
+		thumb: require('assets/images/gallery/howWeMet-processed/IMG_0215-thumb.jpg'),
+		full: require('assets/images/gallery/howWeMet-processed/IMG_0215.JPG'),
+	},
+]
+export const datingThroughTheYearsImages = [
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/10170910_10203563743756458_611406389091664077_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/10170910_10203563743756458_611406389091664077_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/10390015_10203727068280682_4654923103280501655_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/10390015_10203727068280682_4654923103280501655_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/10505611_4871627284742_2856349105294523218_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/10505611_4871627284742_2856349105294523218_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/10572126_10204413319075310_35556426326604341_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/10572126_10204413319075310_35556426326604341_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/10608252_10204413322635399_9203319466340904761_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/10608252_10204413322635399_9203319466340904761_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/11012617_10200510402718781_8445925018398260747_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/11012617_10200510402718781_8445925018398260747_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/11752436_10207238365745087_2350945665745857759_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/11752436_10207238365745087_2350945665745857759_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/12014952_10153605271804197_1163818496246407014_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/12014952_10153605271804197_1163818496246407014_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/12605323_10208051529353669_388915452701256278_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/12605323_10208051529353669_388915452701256278_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/12719533_1198702826826114_7856516495615926590_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/12719533_1198702826826114_7856516495615926590_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/13095930_10209144480351385_5080612924475736041_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/13095930_10209144480351385_5080612924475736041_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/13174003_10209188928662565_4563546411114177972_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/13174003_10209188928662565_4563546411114177972_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/13246444_10209294561103310_1279445829941168150_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/13246444_10209294561103310_1279445829941168150_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/15871806_10211495802012957_8568743176346674214_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/15871806_10211495802012957_8568743176346674214_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/1908218_10200316783078411_8275784096128162694_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/1908218_10200316783078411_8275784096128162694_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/21586546_10214027531664616_8694321854113128622_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/21586546_10214027531664616_8694321854113128622_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/23800304_1848273128535140_3764001438969896249_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/23800304_1848273128535140_3764001438969896249_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/23847488_10214650462717503_6025098066419188025_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/23847488_10214650462717503_6025098066419188025_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/26114202_10214975430081484_458931277668504056_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/26114202_10214975430081484_458931277668504056_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/28514454_10204332405866471_1980162015977298212_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/28514454_10204332405866471_1980162015977298212_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/36229656_10216441992304623_6396403220935081984_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/36229656_10216441992304623_6396403220935081984_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/42403273_10217142452495690_7319334612730118144_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/42403273_10217142452495690_7319334612730118144_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/44151986_10212236042966295_2676358894262943744_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/44151986_10212236042966295_2676358894262943744_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/45228701_10217423928692419_2873021413772492800_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/45228701_10217423928692419_2873021413772492800_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/48379400_10217780356722897_3324396904346812416_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/48379400_10217780356722897_3324396904346812416_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/48405333_10217780357002904_8069173866104094720_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/48405333_10217780357002904_8069173866104094720_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/56971017_10218699609343638_4676530133287305216_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/56971017_10218699609343638_4676530133287305216_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/56986745_10218699611823700_4681675538467651584_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/56986745_10218699611823700_4681675538467651584_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/56990323_10218699588943128_8813798745712885760_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/56990323_10218699588943128_8813798745712885760_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/57012521_10218699588423115_1994051262814879744_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/57012521_10218699588423115_1994051262814879744_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/57183838_10218699611423690_3888674320490168320_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/57183838_10218699611423690_3888674320490168320_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/57308605_10218699586703072_4215314099543736320_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/57308605_10218699586703072_4215314099543736320_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/57308655_10218699588623120_2832468951038951424_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/57308655_10218699588623120_2832468951038951424_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/65249296_10219278765102170_5523327075072606208_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/65249296_10219278765102170_5523327075072606208_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/65297302_10219279084790162_5689657766738657280_o-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/65297302_10219279084790162_5689657766738657280_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/67694630_10218685667040465_6311810081943977984_o-(1)-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/67694630_10218685667040465_6311810081943977984_o-(1).jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/68424024_10214165306156669_7287213492921171968_n-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/68424024_10214165306156669_7287213492921171968_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/IMG_0075-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/IMG_0075.JPG'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/IMG_1205-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/IMG_1205.JPG'),
+	},
+	{
+		thumb: require('assets/images/gallery/datingThroughTheYears-processed/IMG_1406-thumb.jpg'),
+		full: require('assets/images/gallery/datingThroughTheYears-processed/IMG_1406.JPG'),
+	},
+]
+export const proposalEngagementImages = [
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44429801_2413011798716245_7766399734255714304_n-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44429801_2413011798716245_7766399734255714304_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44545767_10217356987698936_6351405535769657344_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44545767_10217356987698936_6351405535769657344_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44554498_10212273169734441_1549973187964436480_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44554498_10212273169734441_1549973187964436480_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44588564_10217356987378928_4811065109046624256_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44588564_10217356987378928_4811065109046624256_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44598607_10217356986418904_5166587817316319232_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44598607_10217356986418904_5166587817316319232_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44602315_10217356986538907_2050716424208384000_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44602315_10217356986538907_2050716424208384000_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44613796_10217356987458930_3867663452147286016_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44613796_10217356987458930_3867663452147286016_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44702808_2273767075985741_6739627651129933824_n-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44702808_2273767075985741_6739627651129933824_n.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/44737950_10217356986258900_1397913985428226048_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/44737950_10217356986258900_1397913985428226048_o.jpg'),
+	},
+	{
+		thumb: require('assets/images/gallery/proposalEngagement-processed/57533059_10218699610983679_3154443738479067136_o-thumb.jpg'),
+		full: require('assets/images/gallery/proposalEngagement-processed/57533059_10218699610983679_3154443738479067136_o.jpg'),
+	},
+]
 export const processedImages = [
 	{
 		thumb: require('assets/images/gallery/processed/courtney_stuart_engaged_0001-thumb.jpg'),

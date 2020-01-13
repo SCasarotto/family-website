@@ -1,52 +1,68 @@
 import styled from 'styled-components'
+import Slider from 'react-slick'
 
-import { splashBackground } from 'config/images'
+export const HeaderWrapper = styled.div`
+	position: relative;
+	/* This is a hack to get ride of the bottom white space. */
+	overflow: hidden;
+	max-height: 100vh;
+`
+export const HeaderSlider = styled(Slider)`
+	.slick-dots {
+		bottom: 20px;
 
-export const PageWrapper = styled.div`
-	min-height: 100vh;
-	background-image: url(${splashBackground});
+		li {
+			button::before {
+				color: #ffffff;
+				font-size: 8px;
+			}
+			&.slick-active {
+				button::before {
+					color: #ffffff;
+				}
+			}
+		}
+	}
+`
+export const HeaderSlide = styled.div<{ image: string }>`
+	height: 100vh;
+	min-height: 400px;
+	background-image: url(${(props) => props.image});
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 `
-export const CopyContainer = styled.div``
-export const Title = styled.h1`
+export const HeaderCopyWrapper = styled.div`
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+`
+export const HeaderTitle = styled.h1`
+	/* font-size: 66px; */
+	color: white;
+	line-height: 1.2;
+	text-align: center;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	font-size: 8vw;
-	color: #ffffff;
-	line-height: 1.1;
-	text-align: center;
-	font-family: 'Great Vibes', cursive;
-	font-weight: 400;
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-	padding: 0px 30px;
+	color: #ffffff;
 
-	@media only screen and (max-width: 800px) {
+	font-size: 6vw;
+
+	@media only screen and (max-width: 900px) {
 		font-size: 10vw;
 	}
 	@media only screen and (max-width: 500px) {
 		font-size: 44px;
 	}
 `
-export const Subtitle = styled.h2`
-	margin-top: 0px;
-	margin-bottom: 0px;
-	font-size: 2vw;
-	color: #ffffff;
-	line-height: 1.5;
-	text-align: center;
+export const HeaderSubtitle = styled.p`
+	font-size: 18px;
 	font-weight: 400;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
-	padding: 0px 30px;
-
-	@media only screen and (max-width: 800px) {
-		font-size: 3vw;
-	}
-	@media only screen and (max-width: 500px) {
-		font-size: 16px;
-	}
+	line-height: 1.5;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	text-align: center;
 `

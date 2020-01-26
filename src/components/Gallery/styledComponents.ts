@@ -15,9 +15,11 @@ export const GalleryThumbnail = styled.img`
 	overflow: hidden;
 	cursor: pointer;
 	margin: 10px;
+	border-radius: 10px;
+	transition: opacity 0.2s ease-in;
 
 	:hover {
-		flex-shrink: 0;
+		opacity: 0.75;
 	}
 
 	@media only screen and (max-width: 900px) {

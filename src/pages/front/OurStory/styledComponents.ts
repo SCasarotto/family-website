@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { TESegmentedGroup } from 'react-tec'
 
 import { pageHeaders } from 'config/images'
 
@@ -42,29 +41,25 @@ export const GalleryContainer = styled.div`
 	padding-left: 30px;
 	padding-right: 30px;
 `
-export const GalleryHeader = styled.div`
-	margin-bottom: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-`
-export const GalleryTabs = styled(TESegmentedGroup)`
-	.TESegmentedGroupSegmentedContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-
-		.TESegmentedGroupSegmentedLabelWrapper label {
-			font-size: 20px;
-			border-radius: 5px;
-			margin-left: 8px;
-			margin-right: 8px;
-			padding: 13px 15px 10px;
-			text-align: center;
-		}
-	}
+export const GalleryRow = styled.div`
+	margin-bottom: 80px;
 `
 export const CopyWrapper = styled.div`
 	max-width: 1200px;
-	margin: 0px auto;
+	margin: 0px auto 50px;
+`
+export const CopyTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 46px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+`
+export const CopySubtitle = styled.h3`
+	margin-top: 0px;
+	font-size: 26px;
+`
+export const Copy = styled.p`
+	line-height: 1.5;
+	font-size: 18px;
 `

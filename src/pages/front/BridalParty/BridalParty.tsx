@@ -46,7 +46,14 @@ export const BridalParty = () => {
 							<PartyImage src={bridalParty.hayden} alt='Hayden Wilsey' />
 							<PartyName>Hayden Wilsey</PartyName>
 							<PartyTitle>Best Man & Officiant</PartyTitle>
-							<PartyCopy></PartyCopy>
+							<PartyCopy>
+								{' '}
+								Hayden and Stuart have been best buds ever since they were kids.
+								From playing video games to having long life chats, Hayden is one of
+								the most down to earth and thoughtufl people that you could find to
+								support you and push you to grow into the best version of yourself.
+								What more could you ask for in a friend?
+							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
 							<PartyImage src={bridalParty.becca} alt='Becca Shultz' />
@@ -65,7 +72,12 @@ export const BridalParty = () => {
 							<PartyImage src={bridalParty.parker} alt='Parker Casarotto' />
 							<PartyName>Parker Casarotto</PartyName>
 							<PartyTitle>Groomsmen</PartyTitle>
-							<PartyCopy></PartyCopy>
+							<PartyCopy>
+								Not only do they look alike, but these two brothers have grown close
+								over the years sharing he same interests and just being two peas in
+								a pod. Sometimes the best of friends are your brother from the same
+								mother.
+							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
 							<PartyImage src={bridalParty.diana} alt='Diana Koranda' />
@@ -84,7 +96,12 @@ export const BridalParty = () => {
 							<PartyImage src={bridalParty.chad} alt='Chad Casarotto' />
 							<PartyName>Chad Casarotto</PartyName>
 							<PartyTitle>Groomsmen</PartyTitle>
-							<PartyCopy></PartyCopy>
+							<PartyCopy>
+								As the older brother, Chad impacted Stuart in many ways like shaping
+								his good appreciation of music and chess. But more importantly, Chad
+								inspired Stuart to strive to be like his smart big brother and find
+								a best friend in life.
+							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
 							<PartyImage src={bridalParty.madeline} alt='Madeline Gorsuch' />

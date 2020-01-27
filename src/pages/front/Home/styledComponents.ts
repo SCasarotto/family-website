@@ -24,13 +24,13 @@ export const HeaderSlider = styled(Slider)`
 		}
 	}
 `
-export const HeaderSlide = styled.div<{ image: string }>`
+export const HeaderSlide = styled.div<{ image: string; center?: number }>`
 	height: 100vh;
 	min-height: 400px;
 	background-image: url(${(props) => props.image});
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: ${(props) => props.center || 50}% 50%;
 `
 export const HeaderCopyWrapper = styled.div`
 	position: absolute;

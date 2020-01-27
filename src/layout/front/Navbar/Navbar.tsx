@@ -24,7 +24,7 @@ export const Navbar = () => {
 						<NavLink to='bridal-party'>Bridal Party</NavLink>
 					</NavListItem>
 				</NavList>
-				<Name>Stuart & Courtney</Name>
+				<Name to='/'>Stuart & Courtney</Name>
 				<NavList>
 					<NavListItem>
 						<NavLink to='/event-details'>Event Details</NavLink>

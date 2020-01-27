@@ -58,7 +58,7 @@ export const NavLink = styled(NL)`
 		font-size: 14px;
 	}
 `
-export const Name = styled.div`
+export const Name = styled(NL)`
 	margin-top: 0px;
 	margin-bottom: 0px;
 	color: #ffffff;
@@ -70,6 +70,7 @@ export const Name = styled.div`
 	font-size: 50px;
 	flex: 1;
 	white-space: nowrap;
+	text-decoration: none;
 
 	@media only screen and (max-width: 900px) {
 		font-size: 36px;

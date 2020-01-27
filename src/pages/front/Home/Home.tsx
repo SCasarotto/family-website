@@ -56,7 +56,7 @@ const countDownTo = (date: Date) => {
 }
 const weddingStartDate = new Date('2020-07-18T16:00:00')
 
-export const Home = () => {
+const CountDown = () => {
 	const [countDown, setCountDown] = useState<CountdownData>(countDownTo(weddingStartDate))
 
 	useEffect(() => {
@@ -65,7 +65,29 @@ export const Home = () => {
 			clearInterval(intervalId)
 		}
 	}, [])
+	return (
+		<CountDownWrapper>
+			<CountDownColumn>
+				<CountDownValue>{countDown.days}</CountDownValue>
+				<CountDownLoaded>Days</CountDownLoaded>
+			</CountDownColumn>
+			<CountDownColumn>
+				<CountDownValue>{countDown.hours}</CountDownValue>
+				<CountDownLoaded>Hours</CountDownLoaded>
+			</CountDownColumn>
+			<CountDownColumn>
+				<CountDownValue>{countDown.minutes}</CountDownValue>
+				<CountDownLoaded>Minutes</CountDownLoaded>
+			</CountDownColumn>
+			<CountDownColumn>
+				<CountDownValue>{countDown.seconds}</CountDownValue>
+				<CountDownLoaded>Seconds</CountDownLoaded>
+			</CountDownColumn>
+		</CountDownWrapper>
+	)
+}
 
+export const Home = () => {
 	return (
 		<PageWrapper>
 			<HeaderWrapper>
@@ -87,24 +109,7 @@ export const Home = () => {
 				</HeaderSlider>
 				<HeaderCopyWrapper>
 					<HeaderTitle>We're Engaged!</HeaderTitle>
-					<CountDownWrapper>
-						<CountDownColumn>
-							<CountDownValue>{countDown.days}</CountDownValue>
-							<CountDownLoaded>Days</CountDownLoaded>
-						</CountDownColumn>
-						<CountDownColumn>
-							<CountDownValue>{countDown.hours}</CountDownValue>
-							<CountDownLoaded>Hours</CountDownLoaded>
-						</CountDownColumn>
-						<CountDownColumn>
-							<CountDownValue>{countDown.minutes}</CountDownValue>
-							<CountDownLoaded>Minutes</CountDownLoaded>
-						</CountDownColumn>
-						<CountDownColumn>
-							<CountDownValue>{countDown.seconds}</CountDownValue>
-							<CountDownLoaded>Seconds</CountDownLoaded>
-						</CountDownColumn>
-					</CountDownWrapper>
+					<CountDown />
 				</HeaderCopyWrapper>
 			</HeaderWrapper>
 		</PageWrapper>

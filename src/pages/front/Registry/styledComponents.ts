@@ -5,7 +5,7 @@ import { pageHeaders } from 'config/images'
 export const Header = styled.div`
 	height: 60vh;
 	min-height: 400px;
-	background-image: url(${pageHeaders.ourStory});
+	background-image: url(${pageHeaders.registry});
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -31,35 +31,19 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
-export const GallerySection = styled.div`
-	padding-top: 50px;
+export const ComingSoonWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 80px;
 	padding-bottom: 50px;
-`
-export const GalleryContainer = styled.div`
-	max-width: 1400px;
-	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
 `
-export const GalleryRow = styled.div`
-	margin-bottom: 80px;
-`
-export const CopyWrapper = styled.div`
-	max-width: 1200px;
-	margin: 0px auto 50px;
-`
-export const CopyTitle = styled.h2`
-	margin-top: 0px;
-	margin-bottom: 20px;
-	font-size: 46px;
-	line-height: 1.2;
+export const ComingSoonCopy = styled.p`
+	font-size: 36px;
+	text-align: center;
 	color: ${(props) => props.theme.primary};
-`
-export const CopySubtitle = styled.h3`
-	margin-top: 0px;
-	font-size: 26px;
-`
-export const Copy = styled.p`
+	opacity: 0.5;
 	line-height: 1.5;
-	font-size: 18px;
 `

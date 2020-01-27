@@ -16,13 +16,13 @@ import {
 } from './styledComponents'
 
 const headerSliderImages = [
-	processedImages[53 - 1].full,
-	processedImages[97 - 1].full,
-	processedImages[80 - 1].full,
-	processedImages[134 - 1].full,
-	processedImages[26 - 1].full,
-	processedImages[24 - 1].full,
-	processedImages[33 - 1].full,
+	{ src: processedImages[53 - 1].full, center: 75 },
+	{ src: processedImages[97 - 1].full, center: 28 },
+	{ src: processedImages[80 - 1].full, center: 74 },
+	{ src: processedImages[134 - 1].full, center: 43 },
+	{ src: processedImages[26 - 1].full, center: 35 },
+	{ src: processedImages[24 - 1].full, center: 52 },
+	{ src: processedImages[33 - 1].full, center: 32 },
 ]
 
 interface CountdownData {
@@ -104,7 +104,7 @@ export const Home = () => {
 					fade
 				>
 					{headerSliderImages.map((image, index) => (
-						<HeaderSlide image={image} key={index} />
+						<HeaderSlide image={image.src} center={image.center} key={index} />
 					))}
 				</HeaderSlider>
 				<HeaderCopyWrapper>

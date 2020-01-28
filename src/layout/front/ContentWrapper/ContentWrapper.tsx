@@ -5,7 +5,6 @@ import { useTransition, animated } from 'react-spring'
 // import { NotFound } from 'pages/NotFound'
 
 import { Navbar } from 'layout/front/Navbar'
-// import { Footer } from 'layout/front/Footer'
 
 import { Home } from 'pages/front/Home'
 import { OurStory } from 'pages/front/OurStory'
@@ -44,7 +43,6 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 					</animated.div>
 				))}
 			</FrontContentWrapper>
-			{/* <Footer /> */}
 		</MainPanel>
 	)
 }

@@ -21,7 +21,8 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 	const transitions = useTransition(location, (location) => location.pathname, {
 		from: { opacity: 0 },
 		enter: { opacity: 1 },
-		leave: { opacity: 0 },
+		//This seems to remove the weird ability to scroll during page transition
+		leave: { opacity: 0, position: 'fixed', width: '100%' },
 		config: { mass: 10, friction: 60 },
 	})
 	return (

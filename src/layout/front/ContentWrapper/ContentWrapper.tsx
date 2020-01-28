@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Route, Switch, RouteChildrenProps } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
 
@@ -14,6 +14,8 @@ import { Registry } from 'pages/front/Registry'
 import { RSVP } from 'pages/front/RSVP'
 
 import { MainPanel, FrontContentWrapper } from './styledComponents'
+import { preloadImage } from 'helpers'
+import { pageHeaders } from 'config/images'
 
 interface Props extends RouteChildrenProps {}
 export const ContentWrapper: React.FC<Props> = (props) => {
@@ -25,6 +27,17 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 		leave: { opacity: 0, position: 'fixed', width: '100%' },
 		config: { mass: 10, friction: 60 },
 	})
+
+	//This is used to preload the front page headers.
+	useEffect(() => {
+		setTimeout(() => {
+			const headerImages = Object.values(pageHeaders)
+			for (let i = 0; i < headerImages.length; i++) {
+				preloadImage(headerImages[i])
+			}
+		}, 1000)
+	}, [])
+
 	return (
 		<MainPanel>
 			<Navbar />

@@ -5,7 +5,6 @@ import { useTransition, animated } from 'react-spring'
 // import { NotFound } from 'pages/NotFound'
 
 import { Navbar } from 'layout/front/Navbar'
-// import { Footer } from 'layout/front/Footer'
 
 import { Home } from 'pages/front/Home'
 import { OurStory } from 'pages/front/OurStory'
@@ -22,7 +21,8 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 	const transitions = useTransition(location, (location) => location.pathname, {
 		from: { opacity: 0 },
 		enter: { opacity: 1 },
-		leave: { opacity: 0 },
+		//This seems to remove the weird ability to scroll during page transition
+		leave: { opacity: 0, position: 'fixed', width: '100%' },
 		config: { mass: 10, friction: 60 },
 	})
 	return (
@@ -44,7 +44,6 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 					</animated.div>
 				))}
 			</FrontContentWrapper>
-			{/* <Footer /> */}
 		</MainPanel>
 	)
 }

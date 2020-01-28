@@ -89,7 +89,7 @@ const CountDown = () => {
 
 export const Home = () => {
 	return (
-		<PageWrapper>
+		<PageWrapper footer={false}>
 			<HeaderWrapper>
 				<HeaderSlider
 					dots={true}

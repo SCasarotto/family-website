@@ -47,12 +47,10 @@ export const BridalParty = () => {
 							<PartyName>Hayden Wilsey</PartyName>
 							<PartyTitle>Best Man & Officiant</PartyTitle>
 							<PartyCopy>
-								{' '}
 								Hayden and Stuart have been best buds ever since they were kids.
 								From playing video games to having long life chats, Hayden is one of
-								the most down to earth and thoughtufl people that you could find to
-								support you and push you to grow into the best version of yourself.
-								What more could you ask for in a friend?
+								the most down to earth and thoughtful people that you could find to
+								support you and push you to be better.
 							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
@@ -74,9 +72,8 @@ export const BridalParty = () => {
 							<PartyTitle>Groomsmen</PartyTitle>
 							<PartyCopy>
 								Not only do they look alike, but these two brothers have grown close
-								over the years sharing he same interests and just being two peas in
-								a pod. Sometimes the best of friends are your brother from the same
-								mother.
+								over the years sharing the same interests. They keep in touch the
+								most out of the family through playing video most weeks.
 							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
@@ -121,7 +118,12 @@ export const BridalParty = () => {
 							<PartyImage src={bridalParty.mark} alt='Mark Hoffmann' />
 							<PartyName>Mark Hoffmann</PartyName>
 							<PartyTitle>Groomsmen</PartyTitle>
-							<PartyCopy></PartyCopy>
+							<PartyCopy>
+								Sometimes referred to as one of Stuart's work wives, Mark and Stuart
+								share a deep love of coding. Having formed a company together, these
+								two have been on quite a journey and always push each other to
+								improve.
+							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
 							<PartyImage src={bridalParty.stef} alt='Stefanie McWilliams' />
@@ -142,7 +144,12 @@ export const BridalParty = () => {
 							<PartyImage src={bridalParty.austin} alt='Austin Tate' />
 							<PartyName>Austin Tate</PartyName>
 							<PartyTitle>Groomsmen</PartyTitle>
-							<PartyCopy></PartyCopy>
+							<PartyCopy>
+								Austin is one of the most stand-up and kind guys you could know. If
+								you don't know him well, you might think he is quiet but once you
+								get to know him you will find out how funny and supportive he is.
+								Stuart feels so blessed to have Austin be a future brother-in-law.
+							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>
 							<PartyImage src={bridalParty.blair} alt='Blair Casarotto' />

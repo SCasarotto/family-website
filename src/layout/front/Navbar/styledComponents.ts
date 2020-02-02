@@ -28,6 +28,7 @@ export const NavListItem = styled.li`
 	padding: 0px 15px;
 	margin: 0px;
 	list-style: none;
+	text-align: center;
 
 	@media only screen and (max-width: 900px) {
 		padding: 0px 12px;
@@ -46,6 +47,7 @@ export const NavLink = styled(NL)`
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.35);
 	text-align: center;
 	text-decoration: none;
+	line-height: 1.25;
 
 	@media only screen and (max-width: 900px) {
 		font-size: 17px;

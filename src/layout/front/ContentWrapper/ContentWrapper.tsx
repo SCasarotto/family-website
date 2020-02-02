@@ -2,8 +2,6 @@ import React, { useEffect } from 'react'
 import { Route, Switch, RouteChildrenProps } from 'react-router-dom'
 import { useTransition, animated } from 'react-spring'
 
-// import { NotFound } from 'pages/NotFound'
-
 import { Navbar } from 'layout/front/Navbar'
 
 import { Home } from 'pages/front/Home'
@@ -12,6 +10,8 @@ import { BridalParty } from 'pages/front/BridalParty'
 import { EventDetails } from 'pages/front/EventDetails'
 import { Registry } from 'pages/front/Registry'
 import { RSVP } from 'pages/front/RSVP'
+
+import { NotFound } from 'pages/front/NotFound'
 
 import { MainPanel, FrontContentWrapper } from './styledComponents'
 import { preloadImage } from 'helpers'
@@ -52,7 +52,7 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 							<Route path='/registry' component={Registry} />
 							<Route path='/rsvp' component={RSVP} />
 
-							{/* <Route component={NotFound} /> */}
+							<Route component={NotFound} />
 						</Switch>
 					</animated.div>
 				))}

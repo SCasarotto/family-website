@@ -1,5 +1,6 @@
 export const splashBackground = require('assets/images/splash-background.jpg')
 export const footer = require('assets/images/footer/footer.jpg')
+export const notFound = require('assets/images/gallery/processed/courtney_stuart_engaged_0035.jpg')
 export const pageHeaders = {
 	ourStory: require('assets/images/pageHeaders/ourStory.jpg'),
 	bridalParty: require('assets/images/pageHeaders/bridalParty.jpg'),

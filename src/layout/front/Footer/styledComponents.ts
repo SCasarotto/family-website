@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { footer } from 'config/images'
 
 export const Container = styled.div`
-	height: 400px;
+	height: 30vw;
+	min-height: 400px;
 	background-image: url(${footer});
 	background-size: cover;
 	background-repeat: no-repeat;

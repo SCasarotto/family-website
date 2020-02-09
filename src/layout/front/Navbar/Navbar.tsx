@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import {
 	NavbarContainer,
@@ -7,36 +7,78 @@ import {
 	NavListItem,
 	NavLink,
 	Name,
+	MenuButton,
+	MenuButtonIcon,
+	MobileMenuContainer,
+	MobileMenuList,
+	MobileMenuListItem,
+	MobileMenuNavLink,
 } from './styledComponents'
+import { RouteComponentProps } from 'react-router'
 
-export const Navbar = () => {
+const navLinks = [
+	{ to: '/', label: 'Home' },
+	{ to: '/our-story', label: 'Our Story' },
+	{ to: '/bridal-party', label: 'Bridal Party' },
+	{ to: '/event-details', label: 'Event Details' },
+	{ to: '/registry', label: 'Registry' },
+	{ to: '/rsvp', label: 'RSVP' },
+]
+const leftNavLinks = navLinks.filter((linkData, index) => index < Math.floor(navLinks.length / 2))
+const rightNavLinks = navLinks.filter((linkData, index) => index >= Math.floor(navLinks.length / 2))
+
+interface Props {
+	location: RouteComponentProps['location']
+}
+export const Navbar: React.FC<Props> = (props) => {
+	const [mobileNavVisible, setMobileNavVisible] = useState(false)
+
 	return (
-		<NavbarContainer>
-			<NavbarContent>
-				<NavList>
-					<NavListItem>
-						<NavLink to='/'>Home</NavLink>
-					</NavListItem>
-					<NavListItem>
-						<NavLink to='our-story'>Our Story</NavLink>
-					</NavListItem>
-					<NavListItem>
-						<NavLink to='bridal-party'>Bridal Party</NavLink>
-					</NavListItem>
-				</NavList>
-				<Name to='/'>Stuart & Courtney</Name>
-				<NavList>
-					<NavListItem>
-						<NavLink to='/event-details'>Event Details</NavLink>
-					</NavListItem>
-					<NavListItem>
-						<NavLink to='/registry'>Registry</NavLink>
-					</NavListItem>
-					<NavListItem>
-						<NavLink to='rsvp'>RSVP</NavLink>
-					</NavListItem>
-				</NavList>
-			</NavbarContent>
-		</NavbarContainer>
+		<>
+			<NavbarContainer>
+				<NavbarContent>
+					<NavList>
+						{leftNavLinks.map((linkData) => (
+							<NavListItem key={linkData.to}>
+								<NavLink to={linkData.to}>{linkData.label}</NavLink>
+							</NavListItem>
+						))}
+					</NavList>
+					<Name to='/'>Stuart & Courtney</Name>
+					<NavList>
+						{rightNavLinks.map((linkData) => (
+							<NavListItem key={linkData.to}>
+								<NavLink to={linkData.to}>{linkData.label}</NavLink>
+							</NavListItem>
+						))}
+					</NavList>
+					<MenuButton>
+						<MenuButtonIcon onClick={() => setMobileNavVisible(true)} />
+					</MenuButton>
+				</NavbarContent>
+			</NavbarContainer>
+			<MobileMenuContainer visible={mobileNavVisible}>
+				<MobileMenuList>
+					{navLinks.map((linkData) => (
+						<MobileMenuListItem>
+							<MobileMenuNavLink
+								to={linkData.to}
+								onClick={() => setMobileNavVisible(false)}
+							>
+								{linkData.label}
+							</MobileMenuNavLink>
+						</MobileMenuListItem>
+					))}
+					<MobileMenuListItem>
+						<MobileMenuNavLink
+							to={props.location.pathname}
+							onClick={() => setMobileNavVisible(false)}
+						>
+							close
+						</MobileMenuNavLink>
+					</MobileMenuListItem>
+				</MobileMenuList>
+			</MobileMenuContainer>
+		</>
 	)
 }

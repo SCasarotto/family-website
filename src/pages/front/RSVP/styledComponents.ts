@@ -25,7 +25,7 @@ export const HeaderTitle = styled.h1`
 	max-width: 60vw;
 
 	@media only screen and (max-width: 800px) {
-		font-size: 10vw;
+		font-size: 8vw;
 	}
 	@media only screen and (max-width: 500px) {
 		font-size: 44px;

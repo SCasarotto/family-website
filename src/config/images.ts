@@ -1,6 +1,50 @@
 export const splashBackground = require('assets/images/splash-background.jpg')
 export const footer = require('assets/images/footer/footer.jpg')
 export const notFound = require('assets/images/gallery/processed/courtney_stuart_engaged_0035.jpg')
+export const homePageSlider = [
+	{
+		'1800': require('assets/images/home/0053@1800.jpg'),
+		'1200': require('assets/images/home/0053@1200.jpg'),
+		'800': require('assets/images/home/0053@800.jpg'),
+		center: 75,
+	},
+	{
+		'1800': require('assets/images/home/0097@1800.jpg'),
+		'1200': require('assets/images/home/0097@1200.jpg'),
+		'800': require('assets/images/home/0097@800.jpg'),
+		center: 28,
+	},
+	{
+		'1800': require('assets/images/home/0080@1800.jpg'),
+		'1200': require('assets/images/home/0080@1200.jpg'),
+		'800': require('assets/images/home/0080@800.jpg'),
+		center: 74,
+	},
+	{
+		'1800': require('assets/images/home/0134@1800.jpg'),
+		'1200': require('assets/images/home/0134@1200.jpg'),
+		'800': require('assets/images/home/0134@800.jpg'),
+		center: 43,
+	},
+	{
+		'1800': require('assets/images/home/0026@1800.jpg'),
+		'1200': require('assets/images/home/0026@1200.jpg'),
+		'800': require('assets/images/home/0026@800.jpg'),
+		center: 35,
+	},
+	{
+		'1800': require('assets/images/home/0024@1800.jpg'),
+		'1200': require('assets/images/home/0024@1200.jpg'),
+		'800': require('assets/images/home/0024@800.jpg'),
+		center: 52,
+	},
+	{
+		'1800': require('assets/images/home/0033@1800.jpg'),
+		'1200': require('assets/images/home/0033@1200.jpg'),
+		'800': require('assets/images/home/0033@800.jpg'),
+		center: 32,
+	},
+]
 export const pageHeaders = {
 	ourStory: require('assets/images/pageHeaders/ourStory.jpg'),
 	bridalParty: require('assets/images/pageHeaders/bridalParty.jpg'),
@@ -280,6 +324,7 @@ export const proposalEngagementImages = [
 		full: require('assets/images/gallery/proposalEngagement-processed/57533059_10218699610983679_3154443738479067136_o.jpg'),
 	},
 ]
+
 export const processedImages = [
 	{
 		thumb: require('assets/images/gallery/processed/courtney_stuart_engaged_0001-thumb.jpg'),

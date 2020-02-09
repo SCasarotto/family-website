@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
 import { PageWrapper } from 'components'
-import { processedImages } from 'config/images'
+import { homePageSlider } from 'config/images'
 
 import {
 	HeaderWrapper,
@@ -14,16 +14,6 @@ import {
 	CountDownValue,
 	CountDownLoaded,
 } from './styledComponents'
-
-const headerSliderImages = [
-	{ src: processedImages[53 - 1].full, center: 75 },
-	{ src: processedImages[97 - 1].full, center: 28 },
-	{ src: processedImages[80 - 1].full, center: 74 },
-	{ src: processedImages[134 - 1].full, center: 43 },
-	{ src: processedImages[26 - 1].full, center: 35 },
-	{ src: processedImages[24 - 1].full, center: 52 },
-	{ src: processedImages[33 - 1].full, center: 32 },
-]
 
 interface CountdownData {
 	seconds: number
@@ -103,8 +93,8 @@ export const Home = () => {
 					autoplay
 					fade
 				>
-					{headerSliderImages.map((image, index) => (
-						<HeaderSlide image={image.src} center={image.center} key={index} />
+					{homePageSlider.map((imageData, index) => (
+						<HeaderSlide imageData={imageData} key={index} />
 					))}
 				</HeaderSlider>
 				<HeaderCopyWrapper>

@@ -24,13 +24,26 @@ export const HeaderSlider = styled(Slider)`
 		}
 	}
 `
-export const HeaderSlide = styled.div<{ image: string; center?: number }>`
+interface ImageData {
+	'1800': any
+	'1200': any
+	'800': any
+	center: number
+}
+export const HeaderSlide = styled.div<{ imageData: ImageData }>`
 	height: 100vh;
 	min-height: 400px;
-	background-image: url(${(props) => props.image});
+	background-image: url(${(props) => props.imageData['1800']});
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: ${(props) => props.center || 50}% 50%;
+	background-position: ${(props) => props.imageData.center || 50}% 50%;
+
+	@media only screen and (max-width: 1000px) {
+		background-image: url(${(props) => props.imageData['1200']});
+	}
+	@media only screen and (max-width: 600px) {
+		background-image: url(${(props) => props.imageData['800']});
+	}
 `
 export const HeaderCopyWrapper = styled.div`
 	position: absolute;

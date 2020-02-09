@@ -134,7 +134,7 @@ export const MobileMenuContainer = styled.div<{ visible: boolean }>`
 	display: none;
 	visibility: ${(props) => (props.visible ? 'visible' : 'hidden')};
 	opacity: ${(props) => (props.visible ? 1 : 0)};
-	transition: opacity 0.5s ease-in, visiblity 0s ease-in 0.5s;
+	transition: opacity 0.2s ease-in, visibility 0s linear ${(props) => (props.visible ? 0 : 0.2)}s;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;

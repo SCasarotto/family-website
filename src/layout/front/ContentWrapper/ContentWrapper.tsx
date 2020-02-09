@@ -40,7 +40,7 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 
 	return (
 		<MainPanel>
-			<Navbar />
+			<Navbar location={location} />
 			<FrontContentWrapper>
 				{transitions.map(({ item, props, key }) => (
 					<animated.div key={key} style={props}>

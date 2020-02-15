@@ -52,7 +52,7 @@ export const Navbar: React.FC<Props> = (props) => {
 							</NavListItem>
 						))}
 					</NavList>
-					<MenuButton>
+					<MenuButton aria-label='Open Navigation'>
 						<MenuButtonIcon onClick={() => setMobileNavVisible(true)} />
 					</MenuButton>
 				</NavbarContent>

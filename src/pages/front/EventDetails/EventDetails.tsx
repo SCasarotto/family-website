@@ -30,18 +30,18 @@ import { eventDetails } from 'config/images'
 
 const timelineData = [
 	{ time: 'TBD', title: 'Hotel Check-In', copy: 'Freshen up and get ready for the big day.' },
-	{ time: 'TBD', title: 'Shuttle Pick-Up', copy: "Hop a bus ride so you don't have to drive" },
+	{ time: 'TBD', title: 'Shuttle Pick-Up', copy: "Hop a bus ride so you don't have to drive." },
 	{
 		time: 'TBD',
 		title: 'Ceremony',
-		copy: 'Make yourselves comfortable and join us for a special moment',
+		copy: 'Make yourselves comfortable and join us for a special moment.',
 	},
-	{ time: 'TBD', title: 'Cocktail Hour', copy: 'Kick off the celebration and grab a drink' },
-	{ time: 'TBD', title: 'Reception', copy: 'Join us for dinner, drinks, speaches, and dacing' },
+	{ time: 'TBD', title: 'Cocktail Hour', copy: 'Kick off the celebration and grab a drink.' },
+	{ time: 'TBD', title: 'Reception', copy: 'Join us for dinner, drinks, speaches, and dacing.' },
 	{
 		time: 'TBD',
 		title: 'Shuttle Return',
-		copy: 'Easy way to make it back at the end of the night',
+		copy: 'Easy way to make it back at the end of the night.',
 	},
 ]
 
@@ -90,12 +90,11 @@ export const EventDetails = () => {
 							<TimelineRow key={index}>
 								<TimelineLeftColumn>
 									{index % 2 === 0 && (
-										<TimelineTimeTitle style={{ textAlign: 'right' }}>
-											{time}
-										</TimelineTimeTitle>
+										<TimelineTimeTitle rightAlign>{time}</TimelineTimeTitle>
 									)}
 									{index % 2 === 1 && (
 										<>
+											<TimelineTimeTitle mobile>{time}</TimelineTimeTitle>
 											<TimelineRowTitle>{title}</TimelineRowTitle>
 											<TimelineRowCopy>{copy}</TimelineRowCopy>
 										</>
@@ -112,6 +111,7 @@ export const EventDetails = () => {
 									)}
 									{index % 2 === 0 && (
 										<>
+											<TimelineTimeTitle mobile>{time}</TimelineTimeTitle>
 											<TimelineRowTitle>{title}</TimelineRowTitle>
 											<TimelineRowCopy>{copy}</TimelineRowCopy>
 										</>

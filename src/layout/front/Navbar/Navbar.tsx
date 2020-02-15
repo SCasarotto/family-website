@@ -60,7 +60,7 @@ export const Navbar: React.FC<Props> = (props) => {
 			<MobileMenuContainer visible={mobileNavVisible}>
 				<MobileMenuList>
 					{navLinks.map((linkData) => (
-						<MobileMenuListItem>
+						<MobileMenuListItem key={linkData.to}>
 							<MobileMenuNavLink
 								to={linkData.to}
 								onClick={() => setMobileNavVisible(false)}

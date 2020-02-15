@@ -31,21 +31,65 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
-export const DetailsSection = styled.div`
+
+export const LocationSection = styled.div`
 	padding-top: 80px;
 	padding-bottom: 50px;
 `
-export const DetailsContainer = styled.div`
-	max-width: 600px;
+
+export const LocationContainer = styled.div`
+	max-width: 1200px;
 	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 `
-export const DetailsCopy = styled.p`
-	text-align: center;
-	font-size: 22px;
+export const LocationLogoWrapper = styled.div`
+	width: 50%;
+	padding-right: 15px;
+`
+export const LocationLogo = styled.img`
+	display: block;
+	width: 100%;
+	max-width: 500px;
+	margin: 0px auto;
+	border-radius: 10px;
+`
+export const LocationContent = styled.div`
+	width: 50%;
+	padding-left: 15px;
+`
+export const LocationTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+`
+export const LocationCopy = styled.p`
+	font-size: 20px;
 	line-height: 1.5;
 	margin-top: 0px;
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 	color: ${(props) => props.theme.darkerGray};
+	max-width: 475px;
+`
+export const LocationLink = styled.a`
+	display: inline-block;
+	padding: 13px 20px 10px;
+	font-size: 20px;
+	color: ${(props) => props.theme.primary};
+	border: 1px solid ${(props) => props.theme.primary};
+	border-radius: 5px;
+	text-decoration: none;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: color 0.25s ease-in, background-color 0.25s ease-in;
+
+	:hover {
+		color: ${(props) => props.theme.white};
+		background-color: ${(props) => props.theme.primary};
+	}
 `

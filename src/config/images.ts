@@ -324,7 +324,6 @@ export const proposalEngagementImages = [
 		full: require('assets/images/gallery/proposalEngagement-processed/57533059_10218699610983679_3154443738479067136_o.jpg'),
 	},
 ]
-
 export const processedImages = [
 	{
 		thumb: require('assets/images/gallery/processed/courtney_stuart_engaged_0001-thumb.jpg'),
@@ -879,3 +878,6 @@ export const processedImages = [
 		full: require('assets/images/gallery/processed/courtney_stuart_engaged_0138.jpg'),
 	},
 ]
+export const eventDetails = {
+	dcEstate: require('assets/images/eventDetails/dcEstate.jpg'),
+}

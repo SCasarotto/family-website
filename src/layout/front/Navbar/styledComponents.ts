@@ -59,6 +59,10 @@ export const NavLink = styled(NL)`
 	text-decoration: none;
 	line-height: 1.25;
 
+	&.active {
+		font-weight: 700;
+	}
+
 	@media only screen and (max-width: 1100px) {
 		font-size: 17px;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.45);

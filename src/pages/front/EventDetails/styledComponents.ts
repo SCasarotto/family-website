@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import { pageHeaders } from 'config/images'
-import { HeartIcon } from 'assets/SVGs'
 
 export const Header = styled.div`
 	height: 60vh;
@@ -169,7 +168,7 @@ export const LocationLink = styled.a`
 
 export const TimelineSection = styled.div`
 	padding-top: 50px;
-	padding-bottom: 80px;
+	padding-bottom: 50px;
 `
 export const TimelineContainer = styled.div`
 	max-width: 900px;
@@ -268,10 +267,14 @@ export const TimelineDot = styled.div`
 	justify-content: center;
 	align-items: center;
 `
-export const TimelineDotIcon = styled(HeartIcon)`
-	width: 100%;
-	fill: ${(props) => props.theme.white};
+export const TimelineDotIconWrapper = styled.div`
+	font-size: 18px;
+	color: ${(props) => props.theme.white};
 	z-index: 5;
+
+	svg {
+		display: block;
+	}
 `
 export const TimelineRowTitle = styled.h3`
 	margin-top: 0px;
@@ -302,5 +305,129 @@ export const TimelineRowCopy = styled.p`
 	}
 	@media only screen and (max-width: 600px) {
 		font-size: 16px;
+	}
+`
+
+export const HotelSection = styled.div`
+	padding-top: 50px;
+	padding-bottom: 80px;
+
+	@media only screen and (max-width: 600px) {
+		padding-top: 50px;
+	}
+`
+export const HotelContent = styled.div`
+	max-width: 1400px;
+	margin: 0px auto;
+	padding-left: 30px;
+	padding-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media only screen and (max-width: 600px) {
+		flex-wrap: wrap;
+	}
+`
+export const HotelLeftColumn = styled.div`
+	width: 50%;
+	padding-right: 20px;
+
+	@media only screen and (max-width: 600px) {
+		width: 100%;
+		padding-right: 0px;
+	}
+`
+export const HotelRightColumn = styled.div`
+	width: 50%;
+	padding-left: 20px;
+
+	@media only screen and (max-width: 600px) {
+		width: 100%;
+		padding-left: 0px;
+	}
+	@media only screen and (max-width: 600px) {
+		text-align: center;
+	}
+`
+
+export const HotelTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 600px) {
+		text-align: center;
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 26px;
+	}
+`
+export const HotelCopy = styled.p`
+	font-size: 20px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	color: ${(props) => props.theme.darkerGray};
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 600px) {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 14px;
+	}
+`
+export const HotelLink = styled.a`
+	display: inline-block;
+	padding: 13px 20px 10px;
+	font-size: 20px;
+	color: ${(props) => props.theme.primary};
+	border: 1px solid ${(props) => props.theme.primary};
+	border-radius: 5px;
+	text-decoration: none;
+	margin-right: 15px;
+	cursor: pointer;
+	transition: color 0.25s ease-in, background-color 0.25s ease-in;
+
+	:hover,
+	:active {
+		color: ${(props) => props.theme.white};
+		background-color: ${(props) => props.theme.primary};
+	}
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 18px;
+		padding: 10px 16px 8px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 16px;
+		padding: 8px 12px 6px;
+	}
+	@media only screen and (max-width: 600px) {
+		margin-bottom: 15px;
+		padding: 10px 16px 8px;
+	}
+	@media only screen and (max-width: 450px) {
+		margin-bottom: 15px;
+		padding: 8px 12px 6px;
+		font-size: 14px;
 	}
 `

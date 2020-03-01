@@ -21,27 +21,57 @@ import {
 	TimelineRightColumn,
 	TimelineTimeTitle,
 	TimelineDot,
-	TimelineDotIcon,
+	TimelineDotIconWrapper,
 	TimelineRowTitle,
 	TimelineRowCopy,
+	HotelSection,
+	HotelContent,
+	HotelLeftColumn,
+	HotelRightColumn,
+	HotelTitle,
+	HotelCopy,
+	HotelLink,
 } from './styledComponents'
 import { PageWrapper } from 'components'
 import { eventDetails } from 'config/images'
+import { FaHeart, FaHotel, FaBus, FaCocktail, FaMusic } from 'react-icons/fa'
 
 const timelineData = [
-	{ time: 'TBD', title: 'Hotel Check-In', copy: 'Freshen up and get ready for the big day.' },
-	{ time: 'TBD', title: 'Shuttle Pick-Up', copy: "Hop a bus ride so you don't have to drive." },
+	{
+		time: 'TBD',
+		title: 'Hotel Check-In',
+		copy: 'Freshen up and get ready for the big day.',
+		Icon: FaHotel,
+	},
+	{
+		time: 'TBD',
+		title: 'Shuttle Pick-Up',
+		copy: "Hop a bus ride so you don't have to drive.",
+		Icon: FaBus,
+	},
 	{
 		time: 'TBD',
 		title: 'Ceremony',
 		copy: 'Make yourselves comfortable and join us for a special moment.',
+		Icon: FaHeart,
 	},
-	{ time: 'TBD', title: 'Cocktail Hour', copy: 'Kick off the celebration and grab a drink.' },
-	{ time: 'TBD', title: 'Reception', copy: 'Join us for dinner, drinks, speaches, and dacing.' },
+	{
+		time: 'TBD',
+		title: 'Cocktail Hour',
+		copy: 'Kick off the celebration and grab a drink.',
+		Icon: FaCocktail,
+	},
+	{
+		time: 'TBD',
+		title: 'Reception',
+		copy: 'Join us for dinner, drinks, speaches, and dacing.',
+		Icon: FaMusic,
+	},
 	{
 		time: 'TBD',
 		title: 'Shuttle Return',
 		copy: 'Easy way to make it back at the end of the night.',
+		Icon: FaBus,
 	},
 ]
 
@@ -85,7 +115,7 @@ export const EventDetails = () => {
 				<TimelineContainer>
 					<TimelineLine />
 					{timelineData.map((row, index) => {
-						const { time, title, copy } = row
+						const { time, title, copy, Icon } = row
 						return (
 							<TimelineRow key={index}>
 								<TimelineLeftColumn>
@@ -102,7 +132,9 @@ export const EventDetails = () => {
 								</TimelineLeftColumn>
 								<TimelineCenterColumn>
 									<TimelineDot>
-										<TimelineDotIcon />
+										<TimelineDotIconWrapper>
+											<Icon />
+										</TimelineDotIconWrapper>
 									</TimelineDot>
 								</TimelineCenterColumn>
 								<TimelineRightColumn>
@@ -122,6 +154,34 @@ export const EventDetails = () => {
 					})}
 				</TimelineContainer>
 			</TimelineSection>
+			<HotelSection>
+				<HotelContent>
+					<HotelLeftColumn>
+						<iframe
+							src='https://www.google.com/maps/d/u/0/embed?mid=19rBn3XhI4Nf9dZg2ziMWAJVNbQv-wUCk'
+							width='100%'
+							height='480'
+							title='Wedding Hotels'
+						></iframe>
+					</HotelLeftColumn>
+					<HotelRightColumn>
+						<HotelTitle>Hotel Information</HotelTitle>
+						<HotelCopy>
+							We have secured a room block at the Hampton Inn Beloit for both Friday
+							July 17th and Saturday July 18th. ______PUT INSTRUCTIONS HERE!!______ If
+							the room block fills up or you wish to stay elsewhere, there are many
+							hotels options to pick from close by.
+						</HotelCopy>
+						<HotelLink
+							href='https://www.hilton.com/en/hotels/jvlcrhx-hampton-beloit/'
+							target='_blank'
+							rel='noopener noreferrer'
+						>
+							Hotel Website
+						</HotelLink>
+					</HotelRightColumn>
+				</HotelContent>
+			</HotelSection>
 		</PageWrapper>
 	)
 }

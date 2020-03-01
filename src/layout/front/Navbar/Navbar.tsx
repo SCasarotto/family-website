@@ -17,7 +17,7 @@ import {
 import { RouteComponentProps } from 'react-router'
 
 const navLinks = [
-	{ to: '/', label: 'Home' },
+	{ to: '/', label: 'Home', exact: true },
 	{ to: '/our-story', label: 'Our Story' },
 	{ to: '/bridal-party', label: 'Bridal Party' },
 	{ to: '/event-details', label: 'Event Details' },
@@ -40,7 +40,9 @@ export const Navbar: React.FC<Props> = (props) => {
 					<NavList>
 						{leftNavLinks.map((linkData) => (
 							<NavListItem key={linkData.to}>
-								<NavLink to={linkData.to}>{linkData.label}</NavLink>
+								<NavLink to={linkData.to} exact={linkData.exact}>
+									{linkData.label}
+								</NavLink>
 							</NavListItem>
 						))}
 					</NavList>
@@ -48,7 +50,9 @@ export const Navbar: React.FC<Props> = (props) => {
 					<NavList>
 						{rightNavLinks.map((linkData) => (
 							<NavListItem key={linkData.to}>
-								<NavLink to={linkData.to}>{linkData.label}</NavLink>
+								<NavLink to={linkData.to} exact={linkData.exact}>
+									{linkData.label}
+								</NavLink>
 							</NavListItem>
 						))}
 					</NavList>
@@ -63,6 +67,7 @@ export const Navbar: React.FC<Props> = (props) => {
 						<MobileMenuListItem key={linkData.to}>
 							<MobileMenuNavLink
 								to={linkData.to}
+								exact={linkData.exact}
 								onClick={() => setMobileNavVisible(false)}
 							>
 								{linkData.label}

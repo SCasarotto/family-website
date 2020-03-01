@@ -26,11 +26,18 @@ import {
 	TimelineRowCopy,
 	HotelSection,
 	HotelContent,
+	HotelColumnWrapper,
 	HotelLeftColumn,
 	HotelRightColumn,
 	HotelTitle,
 	HotelCopy,
-	HotelLink,
+	HotelOl,
+	HotelLi,
+	HotelLiLink,
+	HotelOtherOptionsWrapper,
+	HotelSubtitle,
+	HotelOptionsList,
+	HotelOptionsItem,
 } from './styledComponents'
 import { PageWrapper } from 'components'
 import { eventDetails } from 'config/images'
@@ -156,30 +163,88 @@ export const EventDetails = () => {
 			</TimelineSection>
 			<HotelSection>
 				<HotelContent>
-					<HotelLeftColumn>
-						<iframe
-							src='https://www.google.com/maps/d/u/0/embed?mid=19rBn3XhI4Nf9dZg2ziMWAJVNbQv-wUCk'
-							width='100%'
-							height='480'
-							title='Wedding Hotels'
-						></iframe>
-					</HotelLeftColumn>
-					<HotelRightColumn>
-						<HotelTitle>Hotel Information</HotelTitle>
-						<HotelCopy>
-							We have secured a room block at the Hampton Inn Beloit for both Friday
-							July 17th and Saturday July 18th. ______PUT INSTRUCTIONS HERE!!______ If
-							the room block fills up or you wish to stay elsewhere, there are many
-							hotels options to pick from close by.
-						</HotelCopy>
-						<HotelLink
-							href='https://www.hilton.com/en/hotels/jvlcrhx-hampton-beloit/'
-							target='_blank'
-							rel='noopener noreferrer'
-						>
-							Hotel Website
-						</HotelLink>
-					</HotelRightColumn>
+					<HotelColumnWrapper>
+						<HotelLeftColumn>
+							<iframe
+								src='https://www.google.com/maps/d/u/0/embed?mid=19rBn3XhI4Nf9dZg2ziMWAJVNbQv-wUCk'
+								width='100%'
+								height='480'
+								title='Wedding Hotels'
+								style={{ border: 'none', borderRadius: '10px' }}
+							></iframe>
+						</HotelLeftColumn>
+						<HotelRightColumn>
+							<HotelTitle>Hotel Information</HotelTitle>
+							<HotelCopy>
+								We have secured a room block at the Hampton Inn Beloit (Hilton
+								properties) for both Friday, July 17th and Saturday, July 18th.
+							</HotelCopy>
+							<HotelOl>
+								<HotelLi>
+									To make an online reservation, please go to{' '}
+									<HotelLiLink href='https://www.hilton.com/'>
+										www.hilton.com
+									</HotelLiLink>
+								</HotelLi>
+								<HotelLi>Enter "Beloit, WI, USA" in the destination input.</HotelLi>
+								<HotelLi>Enter in the date of checkin (July 17th or 18th)</HotelLi>
+								<HotelLi>
+									Click "Special Rates" and enter the group code "TCW"{' '}
+								</HotelLi>
+								<HotelLi>
+									Look for hotel selection with "Tate-Casarotto Wedding" at the
+									Hampton Inn Beloit
+								</HotelLi>
+							</HotelOl>
+							<HotelCopy>
+								The agreed upon rate for the room block is $159.00, so please verify
+								that you were given the correct price. The Cut-off date for joining
+								the room block is 6/17/2020, so please plan accordingly. If the room
+								block fills or if you wish to stay elsewhere, there are many hotel
+								options to choose from close by.
+							</HotelCopy>
+						</HotelRightColumn>
+					</HotelColumnWrapper>
+					<HotelOtherOptionsWrapper>
+						<HotelSubtitle>Other Hotel Options</HotelSubtitle>
+						<HotelOptionsList>
+							<HotelOptionsItem>
+								Fairfield Inn & Suites by Marriott Beloit
+								<br />
+								2784 Milwaukee Rd, Beloit, WI 53511
+								<br />
+								<HotelLiLink href='tel:+16083652200'>(608) 365-2200</HotelLiLink>
+							</HotelOptionsItem>
+							<HotelOptionsItem>
+								Quality Inn
+								<br />
+								2786 Milwaukee Rd, Beloit, WI 53511
+								<br />
+								<HotelLiLink href='tel:+16083622666'>(608) 362-2666</HotelLiLink>
+							</HotelOptionsItem>
+							<HotelOptionsItem>
+								Super 8 by Wyndham Beloit
+								<br />
+								2790 Milwaukee Rd, Beloit, WI 53511
+								<br />
+								<HotelLiLink href='tel:+16083656000'>(608) 365-6000</HotelLiLink>
+							</HotelOptionsItem>
+							<HotelOptionsItem>
+								Baymont by Wyndham Beloit
+								<br />
+								2900 Ford St, Beloit, WI 53511
+								<br />
+								<HotelLiLink href='tel:+16083658680'>(608) 365-8680</HotelLiLink>
+							</HotelOptionsItem>
+							<HotelOptionsItem>
+								Holiday Inn Express & Suites Beloit
+								<br />
+								3022 Ford St, Beloit, WI 53511
+								<br />
+								<HotelLiLink href='tel:+16085194040'>(608) 519-4040</HotelLiLink>
+							</HotelOptionsItem>
+						</HotelOptionsList>
+					</HotelOtherOptionsWrapper>
 				</HotelContent>
 			</HotelSection>
 		</PageWrapper>

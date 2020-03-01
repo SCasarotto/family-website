@@ -311,21 +311,19 @@ export const TimelineRowCopy = styled.p`
 export const HotelSection = styled.div`
 	padding-top: 50px;
 	padding-bottom: 80px;
-
-	@media only screen and (max-width: 600px) {
-		padding-top: 50px;
-	}
 `
 export const HotelContent = styled.div`
 	max-width: 1400px;
 	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
+`
+export const HotelColumnWrapper = styled.div`
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 700px) {
 		flex-wrap: wrap;
 	}
 `
@@ -333,21 +331,19 @@ export const HotelLeftColumn = styled.div`
 	width: 50%;
 	padding-right: 20px;
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 700px) {
 		width: 100%;
 		padding-right: 0px;
+		margin-bottom: 30px;
 	}
 `
 export const HotelRightColumn = styled.div`
 	width: 50%;
 	padding-left: 20px;
 
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 700px) {
 		width: 100%;
 		padding-left: 0px;
-	}
-	@media only screen and (max-width: 600px) {
-		text-align: center;
 	}
 `
 
@@ -364,7 +360,7 @@ export const HotelTitle = styled.h2`
 	@media only screen and (max-width: 800px) {
 		font-size: 28px;
 	}
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 700px) {
 		text-align: center;
 		font-size: 32px;
 	}
@@ -385,49 +381,92 @@ export const HotelCopy = styled.p`
 	@media only screen and (max-width: 800px) {
 		font-size: 16px;
 	}
-	@media only screen and (max-width: 600px) {
+	@media only screen and (max-width: 700px) {
 		max-width: 450px;
 		margin-left: auto;
 		margin-right: auto;
-		text-align: center;
 	}
 	@media only screen and (max-width: 450px) {
 		font-size: 14px;
 	}
 `
-export const HotelLink = styled.a`
-	display: inline-block;
-	padding: 13px 20px 10px;
+export const HotelOl = styled.ol``
+export const HotelLi = styled.li`
 	font-size: 20px;
-	color: ${(props) => props.theme.primary};
-	border: 1px solid ${(props) => props.theme.primary};
-	border-radius: 5px;
-	text-decoration: none;
-	margin-right: 15px;
-	cursor: pointer;
-	transition: color 0.25s ease-in, background-color 0.25s ease-in;
-
-	:hover,
-	:active {
-		color: ${(props) => props.theme.white};
-		background-color: ${(props) => props.theme.primary};
-	}
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	color: ${(props) => props.theme.darkerGray};
 
 	@media only screen and (max-width: 1000px) {
 		font-size: 18px;
-		padding: 10px 16px 8px;
 	}
 	@media only screen and (max-width: 800px) {
 		font-size: 16px;
-		padding: 8px 12px 6px;
 	}
-	@media only screen and (max-width: 600px) {
-		margin-bottom: 15px;
-		padding: 10px 16px 8px;
+	@media only screen and (max-width: 700px) {
+		max-width: 450px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	@media only screen and (max-width: 450px) {
-		margin-bottom: 15px;
-		padding: 8px 12px 6px;
+		font-size: 14px;
+	}
+`
+export const HotelLiLink = styled.a`
+	color: ${(props) => props.theme.darkerGray};
+`
+export const HotelOtherOptionsWrapper = styled.div`
+	padding-top: 20px;
+`
+export const HotelSubtitle = styled.h3`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 26px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+	text-align: center;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 24px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 22px;
+	}
+	@media only screen and (max-width: 700px) {
+		text-align: center;
+		font-size: 24px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 20px;
+	}
+`
+export const HotelOptionsList = styled.ul`
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+`
+export const HotelOptionsItem = styled.li`
+	list-style: none;
+	margin: 20px 10px;
+	display: block;
+	font-size: 20px;
+	line-height: 1.5;
+	color: ${(props) => props.theme.darkerGray};
+	width: 100%;
+	max-width: 375px;
+
+	@media only screen and (max-width: 1000px) {
+		max-width: 350px;
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 800px) {
+		max-width: 290px;
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 450px) {
 		font-size: 14px;
 	}
 `

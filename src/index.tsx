@@ -10,11 +10,14 @@ import { settings } from 'config/settings'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import 'rc-pagination/assets/index.css'
+import 'react-table/react-table.css'
 
 import './index.css'
 
 import { App } from './App'
 import * as serviceWorker from './serviceWorker'
+import { SideNavActiveProvider, TitleBarProvider } from 'contexts'
+import { AppProvider } from 'contexts/AppContext'
 
 firebase.initializeApp({
 	apiKey: settings.FIREBASE_API_KEY,
@@ -34,7 +37,13 @@ if (settings.firebasePerformance) {
 const Root = () => {
 	return (
 		<TEAppWrapper theme={{ primary: '#5a2d36' }}>
-			<App />
+			<AppProvider>
+				<SideNavActiveProvider>
+					<TitleBarProvider>
+						<App />
+					</TitleBarProvider>
+				</SideNavActiveProvider>
+			</AppProvider>
 		</TEAppWrapper>
 	)
 }

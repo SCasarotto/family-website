@@ -16,6 +16,7 @@ import { NotFound } from 'pages/front/NotFound'
 import { MainPanel, FrontContentWrapper } from './styledComponents'
 import { preloadImage } from 'helpers'
 import { pageHeaders } from 'config/images'
+import { SignIn } from 'pages/front/SignIn'
 
 interface Props extends RouteChildrenProps {}
 export const ContentWrapper: React.FC<Props> = (props) => {
@@ -51,6 +52,8 @@ export const ContentWrapper: React.FC<Props> = (props) => {
 							<Route path='/event-details' component={EventDetails} />
 							<Route path='/registry' component={Registry} />
 							<Route path='/rsvp' component={RSVP} />
+
+							<Route path='/comeonover' component={SignIn} />
 
 							<Route component={NotFound} />
 						</Switch>

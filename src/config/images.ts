@@ -1,3 +1,4 @@
+export const logo = require('assets/images/logo.png')
 export const splashBackground = require('assets/images/splash-background.jpg')
 export const footer = require('assets/images/footer/footer.jpg')
 export const notFound = require('assets/images/gallery/processed/courtney_stuart_engaged_0035.jpg')

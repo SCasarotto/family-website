@@ -1,2 +1,5 @@
 export * from './PageWrapper'
 export * from './Gallery'
+export * from './TETableButton'
+export * from './TEReactTable'
+export * from './TEPopupTitle'

@@ -6,14 +6,20 @@ import { useTEPopupsFunctions } from 'react-tec'
 interface Data {
 	uid: string
 	message: string
+	showMessage: string
 	popupFunctions: useTEPopupsFunctions
 }
 export const saveMessage = async (data: Data) => {
-	const { uid, message, popupFunctions } = data
+	const { uid, message, showMessage, popupFunctions } = data
 	const { showNetworkActivity, hideNetworkActivity, showAlert } = popupFunctions
 
 	const validatorConstraints: { [key: string]: any } = {
 		message: {
+			presence: {
+				allowEmpty: false,
+			},
+		},
+		showMessage: {
 			presence: {
 				allowEmpty: false,
 			},
@@ -37,7 +43,10 @@ export const saveMessage = async (data: Data) => {
 			.firestore()
 			.collection('WeddingMessages')
 			.doc(uid)
-			.update({ message })
+			.update({
+				message,
+				showMessage: showMessage === 'Displayed publicly on the website.',
+			})
 
 		hideNetworkActivity()
 		showAlert({

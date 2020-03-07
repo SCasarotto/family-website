@@ -16,7 +16,7 @@ export const tableColumns = ({ handleEdit, handleDelete }: Args) => [
 		Header: 'Date Created',
 		filterMethod: (filter: Filter, rows: any[]) =>
 			filterDateColumn(convertToDateTimeShort, filter, rows),
-		accessor: 'date_created',
+		accessor: 'dateCreated',
 		Cell: (d: { value: number }) => convertToDateTimeShort(d.value),
 	},
 	{
@@ -26,6 +26,11 @@ export const tableColumns = ({ handleEdit, handleDelete }: Args) => [
 	{
 		Header: 'Message',
 		accessor: 'message',
+	},
+	{
+		id: 'showMessage',
+		Header: 'Public',
+		accessor: (d: Message) => (d.showMessage ? 'Yes' : 'No'),
 	},
 	{
 		id: 'actions',

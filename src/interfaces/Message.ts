@@ -3,4 +3,5 @@ export interface Message {
 	dateCreated: number
 	createdBy: string
 	message: string
+	showMessage: boolean
 }

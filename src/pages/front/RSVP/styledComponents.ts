@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 import { pageHeaders } from 'config/images'
+import { TEForm } from 'react-tec'
 
 export const Header = styled.div`
 	height: 60vh;
@@ -31,19 +32,182 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
-export const ComingSoonWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 80px;
+export const RSVPSection = styled.div`
+	padding-top: 50px;
 	padding-bottom: 50px;
+`
+export const RSVPContainer = styled.div`
+	max-width: 900px;
+	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
 `
-export const ComingSoonCopy = styled.p`
+export const RSVPTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
 	font-size: 36px;
-	text-align: center;
+	line-height: 1.2;
 	color: ${(props) => props.theme.primary};
-	opacity: 0.5;
-	line-height: 1.5;
+	text-align: center;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 26px;
+	}
 `
+export const RSVPCopy = styled.p`
+	font-size: 20px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	color: ${(props) => props.theme.darkerGray};
+	text-align: center;
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 600px) {
+		max-width: 450px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 14px;
+	}
+`
+
+export const MessageSection = styled.div`
+	padding-top: 50px;
+	padding-bottom: 50px;
+`
+export const MessageContainer = styled.div`
+	max-width: 1200px;
+	margin: 0px auto;
+	padding-left: 30px;
+	padding-right: 30px;
+`
+export const MessageTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+	text-align: center;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 26px;
+	}
+`
+export const MessageCopy = styled.p`
+	font-size: 20px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 30px;
+	color: ${(props) => props.theme.darkerGray};
+	text-align: center;
+	max-width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 600px) {
+		max-width: 450px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 14px;
+	}
+`
+export const MessageForm = styled(TEForm)`
+	max-width: 840px;
+	margin-left: auto;
+	margin-right: auto;
+`
+export const MessageBoardWrapper = styled.div`
+	padding: 30px 0px;
+`
+export const MessageBoardItem = styled.div`
+	padding: 20px 0px;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+`
+export const MessageBoardMessage = styled.p`
+	font-size: 18px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: ${(props) => props.theme.darkerGray};
+	white-space: pre-line;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 15px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 14px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 12px;
+	}
+`
+export const MessageBoardName = styled.p`
+	font-size: 22px;
+	line-height: 1.5;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	color: ${(props) => props.theme.primary};
+	text-align: right;
+	font-weight: 700;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 14px;
+	}
+`
+/*
+
+	Message Board section
+		- Copy
+		- Form Inputs
+			- Name
+			- Message
+		- Message Board
+			- Message Cell
+			- Pagination
+*/

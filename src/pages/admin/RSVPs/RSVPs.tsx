@@ -1,21 +1,32 @@
-import React from 'react'
-import { TEPanelWrapper, TEPanel } from 'react-tec'
+import React, { useState } from 'react'
+import { TEPanelWrapper, TEPanel, useTEPopups } from 'react-tec'
 
 import { TEReactTable } from 'components'
 
 import { useBarTitle } from 'hooks'
-
 import { customTableFilter } from 'helpers'
+import { RSVP } from 'interfaces'
+
 import { useRSVPs } from './hooks'
 import { tableColumns } from './tableConfigs'
-import { RSVP } from 'interfaces'
+import { confirmDeleteRSVP } from './requests'
+import { EditRSVPPopup } from './EditRSVPPopup'
 
 export const RSVPs = () => {
 	useBarTitle('RSVPs')
+	const popupFunctions = useTEPopups()
 	const { rsvpArray, rsvpLoaded } = useRSVPs()
+	const [editRSVPPopupVisible, setEditRSVPPopupVisible] = useState(false)
+	const [editRSVP, setEditRSVP] = useState<RSVP>()
 
-	const handleEdit = async (rsvp: RSVP) => {}
-	const handleDelete = async (uid: string) => {}
+	const handleEdit = (rsvp: RSVP) => {
+		setEditRSVPPopupVisible(true)
+		setEditRSVP(rsvp)
+	}
+	const handleDelete = (uid: string) => {
+		const data = { uid, popupFunctions }
+		confirmDeleteRSVP(data)
+	}
 
 	return (
 		<>
@@ -36,6 +47,18 @@ export const RSVPs = () => {
 					/>
 				</TEPanel>
 			</TEPanelWrapper>
+			<EditRSVPPopup
+				visible={editRSVPPopupVisible}
+				editRSVP={editRSVP}
+				onSubmit={() => {
+					setEditRSVPPopupVisible(false)
+					setEditRSVP(undefined)
+				}}
+				onClose={() => {
+					setEditRSVPPopupVisible(false)
+					setEditRSVP(undefined)
+				}}
+			/>
 		</>
 	)
 }

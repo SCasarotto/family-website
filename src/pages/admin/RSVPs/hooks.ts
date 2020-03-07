@@ -11,7 +11,7 @@ export const useRSVPs = () => {
 	useEffect(() => {
 		const rsvpsWatcher = firebase
 			.firestore()
-			.collection('WeddingRSVP')
+			.collection('WeddingRSVPs')
 			.onSnapshot(
 				(snapshot) => {
 					setRSVPArray(collectionToDataArray(snapshot))

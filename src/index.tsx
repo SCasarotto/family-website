@@ -11,6 +11,7 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import 'rc-pagination/assets/index.css'
 import 'react-table/react-table.css'
+import 'tippy.js/dist/tippy.css'
 
 import './index.css'
 

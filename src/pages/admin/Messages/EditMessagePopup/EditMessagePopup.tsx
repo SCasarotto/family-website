@@ -1,5 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { TEPopupForm, TEInputRow, useTEPopups, TEDatetimeRow, TETextareaRow } from 'react-tec'
+import {
+	TEPopupForm,
+	TEInputRow,
+	useTEPopups,
+	TEDatetimeRow,
+	TETextareaRow,
+	TESegmentedGroup,
+} from 'react-tec'
 
 import { TEPopupTitle } from 'components'
 import { Message } from 'interfaces'
@@ -19,18 +26,25 @@ export const EditMessagePopup = (props: Props) => {
 	const [dateCreated, setDateCreated] = useState<Date>()
 	const [createdBy, setCreatedBy] = useState('')
 	const [message, setMessage] = useState('')
+	const [showMessage, setShowMessage] = useState('')
 
 	useEffect(() => {
 		if (editMessage) {
-			const { dateCreated, createdBy, message } = editMessage
+			const { dateCreated, createdBy, message, showMessage } = editMessage
 
 			setDateCreated(dateCreated ? new Date(dateCreated) : undefined)
 			setCreatedBy(createdBy)
 			setMessage(message)
+			setShowMessage(
+				showMessage
+					? 'Displayed publicly on the website.'
+					: 'Sent privately to the couple.',
+			)
 		} else {
 			setDateCreated(undefined)
 			setCreatedBy('')
 			setMessage('')
+			setShowMessage('')
 		}
 	}, [editMessage])
 
@@ -40,6 +54,7 @@ export const EditMessagePopup = (props: Props) => {
 			const data = {
 				uid: editMessage!.uid,
 				message,
+				showMessage,
 				popupFunctions,
 			}
 
@@ -47,6 +62,7 @@ export const EditMessagePopup = (props: Props) => {
 			setDateCreated(undefined)
 			setCreatedBy('')
 			setMessage('')
+			setShowMessage('Yes')
 			onSubmit()
 		} catch (e) {
 			console.log(e)
@@ -82,6 +98,17 @@ export const EditMessagePopup = (props: Props) => {
 				title='Message'
 				value={message}
 				onChange={(e) => setMessage(e.target.value)}
+				required
+			/>
+			<TESegmentedGroup
+				labelForKey='editPublic'
+				title='I would like my message:'
+				buttonArray={[
+					'Displayed publicly on the website.',
+					'Sent privately to the couple.',
+				]}
+				checkedValue={showMessage}
+				onChange={(e) => setShowMessage(e.target.value)}
 				required
 			/>
 		</TEPopupForm>

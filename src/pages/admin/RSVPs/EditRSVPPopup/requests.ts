@@ -26,11 +26,6 @@ export const saveRSVP = async (data: Data) => {
 				allowEmpty: false,
 			},
 		},
-		comment: {
-			presence: {
-				allowEmpty: false,
-			},
-		},
 		status: {
 			presence: {
 				allowEmpty: false,

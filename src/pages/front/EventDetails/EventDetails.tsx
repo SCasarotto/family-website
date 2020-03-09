@@ -59,7 +59,7 @@ const timelineData = [
 	{
 		time: 'TBD',
 		title: 'Ceremony',
-		copy: 'Make yourselves comfortable and join us for a special moment.',
+		copy: 'Make yourselves comfortable and join us for our special moment.',
 		Icon: FaHeart,
 	},
 	{
@@ -71,7 +71,7 @@ const timelineData = [
 	{
 		time: 'TBD',
 		title: 'Reception',
-		copy: 'Join us for dinner, drinks, speaches, and dacing.',
+		copy: 'Join us for dinner, drinks, speeches, and dancing.',
 		Icon: FaMusic,
 	},
 	{
@@ -187,7 +187,7 @@ export const EventDetails = () => {
 									</HotelLiLink>
 								</HotelLi>
 								<HotelLi>Enter "Beloit, WI, USA" in the destination input.</HotelLi>
-								<HotelLi>Enter in the date of checkin (July 17th or 18th)</HotelLi>
+								<HotelLi>Enter in the date of check-in (July 17th or 18th)</HotelLi>
 								<HotelLi>
 									Click "Special Rates" and enter the group code "TCW"{' '}
 								</HotelLi>
@@ -197,11 +197,16 @@ export const EventDetails = () => {
 								</HotelLi>
 							</HotelOl>
 							<HotelCopy>
-								The agreed upon rate for the room block is $159.00, so please verify
-								that you were given the correct price. The Cut-off date for joining
-								the room block is 6/17/2020, so please plan accordingly. If the room
-								block fills or if you wish to stay elsewhere, there are many hotel
-								options to choose from close by.
+								The agreed upon rate for the room block is $159.00, so please check
+								that you have the correct price. If you call the Hampton Inn
+								directly, please call (608) 362-6000 and dial "0" to ensure you
+								speak with someone at the front desk. When making your phone
+								reservation, make sure to state the group code of "TCW" in order to
+								receive the room block rates. The Cut-off date for joining the room
+								block is 6/17/2020, so please book and plan accordingly. Note: There
+								is a 48 hour cancellation policy. If the room block fills or if you
+								wish to stay elsewhere, there are many hotel options to choose from
+								close by.
 							</HotelCopy>
 						</HotelRightColumn>
 					</HotelColumnWrapper>

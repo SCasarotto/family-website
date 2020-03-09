@@ -43,38 +43,38 @@ export const OurStory = () => {
 								random person saying something nice just because. She said thank you
 								and asked for his name, where Stuart then was equally surprised that
 								this compliment conversation was still going. After introducing
-								themselves, they actually parted ways and didn’t see each other
-								again for a while.
+								themselves and a kind smile, they went on with their day not knowing
+								that they met their life best friend.
 							</Copy>
 							<Copy>
-								One of Courtney’s sorority sisters, Melanie, who also went to high
-								school with Stuart, was standing in line behind him. She saw the
-								whole compliment interaction take place and teased him by saying
-								“She’s a little young for you…”. Poor Stuart then went on to say “I
-								wasn’t hitting on her! I just thought that she should know that she
-								looked very nice and people should know that”. Then out of left
-								field, the checkout lady in the lunch line chimed in and said, “It
-								definitely looked like you were hitting on her”. What turned out to
-								be an innocent compliment, turned out to be something that Courtney
-								would remember for a while, but unfortunately they did not cross
-								paths for a little while.
+								To put of funny twist on the situation, one of Courtney’s sorority
+								sisters, Melanie, who was high school friends with Stuart, was
+								standing in line behind him and saw the whole interaction take
+								place. She teased him by saying “She’s a little young for you…”.
+								Poor Stuart then went on to say “I wasn’t hitting on her! I just
+								thought that she should know that she looked very nice and people
+								should know that”. Then out of left field, the checkout lady in the
+								lunch line chimed in and said, “It definitely looked like you were
+								hitting on her”. What started out as an honest and simple
+								compliment, turned out to be something that Courtney did not forget.
+								But it wasn't until later that summer that their paths crossed
+								again.
 							</Copy>
 							<Copy>
-								It was until later that summer when Courtney returned to Augie for
-								being a Camp Kesem counselor that they hung out for the first time.
-								Courtney’s friend, sorority sister, and fellow Camp Kesem counselor,
-								Kelsey, said that one of her good friends just got a new kitten and
-								we HAD to go over and see it. The good friend turned out to be that
-								same guy who Courtney remembered for the lunch line, and Courtney
-								was super excited. After hanging out and playing with baby Joni (our
-								current cat), Courtney went off to Camp Kesem, and Stuart was asking
-								about who that girl was.
+								In July 2013, Courtney returned to Augie to be a Camp Kesem
+								counselor. Courtney’s friend, sorority sister, and fellow Camp Kesem
+								counselor, Kelsey, said that one of her good friends just got a new
+								kitten and we HAD to go over and see it. The good friend turned out
+								to be that same guy who Courtney remembered from the lunch line, and
+								Courtney was super excited. After hanging out and playing with baby
+								Joni (our current cat), Courtney went off to Camp Kesem, and Stuart
+								was asking about who that girl was.
 							</Copy>
 							<Copy>
 								After connecting on the oh so romantic Facebook after camp, Courtney
 								and Stuart spent hours messaging back and forth and texting. But
 								only as friends of course :) After 3 months of almost dating, to
-								just being friends to just kidding we should date to nah maybe we
+								just being friends, to just kidding we should date, to nah maybe we
 								will just be friends (cough cough Courtney will take the blame on
 								this one for taking so long!), Courtney and Stuart made it official
 								on October 23rd, 2013 and started dating. So the adventure began!
@@ -104,7 +104,7 @@ export const OurStory = () => {
 								After 4 years of long distance dating with phone calls, Skype dates,
 								and weekend visits, we got an apartment together in Lincoln Park
 								while Courtney completed her final clinical internship at the
-								Shirley Ryan AbilityLab in the Spring on 2018. We made our studio
+								Shirley Ryan AbilityLab in the Spring of 2018. We made our studio
 								apartment our own with lots of love and creative furniture layouts!
 								In many ways, Lincoln Park was a new chapter in our relationship
 								with a place we could call our own and end the period of long

@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 import { useState, useEffect } from 'react'
 import { RSVP } from 'interfaces'
-import { collectionToDataArray } from 'helpers/firebaseHelper'
+import { collectionToDataArray } from 'helpers'
 
 export const useRSVPs = () => {
 	const [rsvpArray, setRSVPArray] = useState<RSVP[]>([])

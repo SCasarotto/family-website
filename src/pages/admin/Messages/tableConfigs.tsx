@@ -39,7 +39,7 @@ export const tableColumns = ({ handleEdit, handleDelete }: Args) => [
 		sortable: false,
 		filterable: false,
 		className: 'actionCell',
-		width: 80,
+		width: 100,
 		Cell: (d: { value: string; original: Message }) => (
 			<>
 				<TETableButton onClick={() => handleEdit(d.original)} icon='edit' />

@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/firestore'
 import { useState, useEffect } from 'react'
 import { Message } from 'interfaces'
-import { collectionToDataArray } from 'helpers/firebaseHelper'
+import { collectionToDataArray } from 'helpers'
 
 export const useMessages = () => {
 	const [messageArray, setMessageArray] = useState<Message[]>([])

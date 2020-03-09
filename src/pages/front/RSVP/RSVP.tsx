@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {
-	TEForm,
+	// TEForm,
 	TEInputRow,
-	TESelectRow,
+	// TESelectRow,
 	TETextareaRow,
 	TEButton,
 	useTEPopups,
@@ -29,37 +29,37 @@ import {
 	MessageBoardMessage,
 	MessageBoardName,
 } from './styledComponents'
-import { saveRSVP, saveMessage } from './requests'
+import { /*saveRSVP,*/ saveMessage } from './requests'
 import { useMessages } from 'pages/admin/Messages/hooks'
 
 export const RSVP = () => {
 	const popupFunctions = useTEPopups()
 	const { messageArray } = useMessages()
-	const [rsvpName, setRSVPName] = useState('')
-	const [rsvpFood, setRSVPFood] = useState<{ value: string; label: string }>()
-	const [rsvpComment, setRSVPComment] = useState('')
+	// const [rsvpName, setRSVPName] = useState('')
+	// const [rsvpFood, setRSVPFood] = useState<{ value: string; label: string }>()
+	// const [rsvpComment, setRSVPComment] = useState('')
 
 	const [messageName, setMessageName] = useState('')
 	const [messageMessage, setMessageMessage] = useState('')
 	const [showMessage, setShowMessage] = useState('Displayed publicly on the website.')
 
-	const handleSubmitRSVP = async (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault()
-		try {
-			const data = {
-				name: rsvpName,
-				foodChoice: rsvpFood,
-				comment: rsvpComment,
-				popupFunctions,
-			}
-			await saveRSVP(data)
-			setRSVPName('')
-			setRSVPFood(undefined)
-			setRSVPComment('')
-		} catch (e) {
-			console.log(e)
-		}
-	}
+	// const handleSubmitRSVP = async (e: React.FormEvent<HTMLFormElement>) => {
+	// 	e.preventDefault()
+	// 	try {
+	// 		const data = {
+	// 			name: rsvpName,
+	// 			foodChoice: rsvpFood,
+	// 			comment: rsvpComment,
+	// 			popupFunctions,
+	// 		}
+	// 		await saveRSVP(data)
+	// 		setRSVPName('')
+	// 		setRSVPFood(undefined)
+	// 		setRSVPComment('')
+	// 	} catch (e) {
+	// 		console.log(e)
+	// 	}
+	// }
 	const handleSubmitMessgae = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault()
 		try {
@@ -88,11 +88,14 @@ export const RSVP = () => {
 			<RSVPSection>
 				<RSVPContainer>
 					<RSVPTitle>RSVP</RSVPTitle>
-					<RSVPCopy>
+					{/* <RSVPCopy>
 						We are excited to have you at our wedding. Please RSVP below so we know you
 						will be joining us and what you will be eating.
+					</RSVPCopy> */}
+					<RSVPCopy>
+						Once invitations go out, you can return to this page and submit your RSVP.
 					</RSVPCopy>
-					<TEForm onSubmit={handleSubmitRSVP}>
+					{/* <TEForm onSubmit={handleSubmitRSVP}>
 						<TEInputRow
 							labelForKey='rsvpName'
 							title='Name'
@@ -127,7 +130,7 @@ export const RSVP = () => {
 							onChange={(e) => setRSVPComment(e.target.value)}
 						/>
 						<TEButton type='submit'>Submit</TEButton>
-					</TEForm>
+					</TEForm> */}
 				</RSVPContainer>
 			</RSVPSection>
 			<MessageSection>

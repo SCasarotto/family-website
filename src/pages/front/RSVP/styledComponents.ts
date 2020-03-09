@@ -70,7 +70,8 @@ export const RSVPCopy = styled.p`
 	margin-bottom: 30px;
 	color: ${(props) => props.theme.darkerGray};
 	text-align: center;
-	max-width: 650px;
+	/* max-width: 650px; ADD ME BACK ONCE WE SHOW RSVP STUFF */
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 

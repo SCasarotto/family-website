@@ -168,7 +168,7 @@ export const EventDetails = () => {
 							<iframe
 								src='https://www.google.com/maps/d/u/0/embed?mid=19rBn3XhI4Nf9dZg2ziMWAJVNbQv-wUCk'
 								width='100%'
-								height='480'
+								height='500'
 								title='Wedding Hotels'
 								style={{ border: 'none', borderRadius: '10px' }}
 							></iframe>
@@ -177,7 +177,8 @@ export const EventDetails = () => {
 							<HotelTitle>Hotel Information</HotelTitle>
 							<HotelCopy>
 								We have secured a room block at the Hampton Inn Beloit (Hilton
-								properties) for both Friday, July 17th and Saturday, July 18th.
+								properties) for both Friday, July 17th and Saturday, July 18th. For
+								online reservation:
 							</HotelCopy>
 							<HotelOl>
 								<HotelLi>
@@ -199,14 +200,15 @@ export const EventDetails = () => {
 							<HotelCopy>
 								The agreed upon rate for the room block is $159.00, so please check
 								that you have the correct price. If you call the Hampton Inn
-								directly, please call (608) 362-6000 and dial "0" to ensure you
-								speak with someone at the front desk. When making your phone
-								reservation, make sure to state the group code of "TCW" in order to
-								receive the room block rates. The Cut-off date for joining the room
-								block is 6/17/2020, so please book and plan accordingly. Note: There
-								is a 48 hour cancellation policy. If the room block fills or if you
-								wish to stay elsewhere, there are many hotel options to choose from
-								close by.
+								directly, please call{' '}
+								<HotelLiLink href='tel:+16083626000'>(608) 362-6000</HotelLiLink>{' '}
+								and dial "0" to ensure you speak with someone at the front desk.
+								When making your phone reservation, make sure to state the group
+								code of "TCW" in order to receive the room block rates. The Cut-off
+								date for joining the room block is 6/17/2020, so please book and
+								plan accordingly. Note: There is a 48 hour cancellation policy. If
+								the room block fills or if you wish to stay elsewhere, there are
+								many hotel options to choose from close by.
 							</HotelCopy>
 						</HotelRightColumn>
 					</HotelColumnWrapper>

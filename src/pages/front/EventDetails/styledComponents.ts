@@ -369,14 +369,14 @@ export const HotelTitle = styled.h2`
 	}
 `
 export const HotelCopy = styled.p`
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	color: ${(props) => props.theme.darkerGray};
 
 	@media only screen and (max-width: 1000px) {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	@media only screen and (max-width: 800px) {
 		font-size: 16px;
@@ -392,14 +392,14 @@ export const HotelCopy = styled.p`
 `
 export const HotelOl = styled.ol``
 export const HotelLi = styled.li`
-	font-size: 20px;
-	line-height: 1.5;
+	font-size: 18px;
+	line-height: 1.25;
 	margin-top: 0px;
 	margin-bottom: 15px;
 	color: ${(props) => props.theme.darkerGray};
 
 	@media only screen and (max-width: 1000px) {
-		font-size: 18px;
+		font-size: 17px;
 	}
 	@media only screen and (max-width: 800px) {
 		font-size: 16px;

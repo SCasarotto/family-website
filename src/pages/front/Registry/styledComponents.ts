@@ -31,19 +31,102 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
-export const ComingSoonWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-top: 80px;
+
+export const DonationSection = styled.div`
+	padding-top: 50px;
 	padding-bottom: 50px;
+`
+export const DonationContainer = styled.div`
+	max-width: 900px;
+	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
 `
-export const ComingSoonCopy = styled.p`
-	font-size: 36px;
-	text-align: center;
-	color: ${(props) => props.theme.primary};
-	opacity: 0.5;
+export const DonationCopy = styled.p`
+	margin-top: 0px;
+	margin-bottom: 10px;
 	line-height: 1.5;
+	font-size: 20px;
+	color: ${(props) => props.theme.darkerGray};
+	text-align: center;
+
+	@media only screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 16px;
+	}
+`
+export const DonatinoStripeWrapper = styled.div`
+	text-align: center;
+	padding: 30px;
+`
+
+export const GiftRegistrySection = styled.div`
+	padding-top: 50px;
+	padding-bottom: 50px;
+`
+export const GiftRegistryContainer = styled.div`
+	max-width: 900px;
+	margin: 0px auto;
+	padding-left: 30px;
+	padding-right: 30px;
+`
+export const GiftRegistryTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+	text-align: center;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 700px) {
+		text-align: center;
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 26px;
+	}
+`
+export const GiftRegistryCopy = styled.p`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	line-height: 1.5;
+	font-size: 20px;
+	color: ${(props) => props.theme.darkerGray};
+	text-align: center;
+
+	@media only screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 16px;
+	}
+`
+export const GiftRegistryLinkWrapper = styled.div`
+	display: flex;
+	justify-content: center;
+	align-items: center;
+`
+export const GiftRegisteryLink = styled.a`
+	display: block;
+	width: 50%;
+	margin: 30px;
+	max-width: 300px;
+	transition: opacity 0.2s ease-in;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.5;
+	}
+`
+export const GiftRegisteryLogo = styled.img`
+	display: block;
+	width: 100%;
 `

@@ -882,3 +882,7 @@ export const processedImages = [
 export const eventDetails = {
 	dcEstate: require('assets/images/eventDetails/dcEstate.jpg'),
 }
+export const registry = {
+	crateAndBarrel: require('assets/images/registery/crateAndBarrel.jpg'),
+	amazon: require('assets/images/registery/amazon.png'),
+}

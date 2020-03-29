@@ -73,7 +73,7 @@ export const BridalParty = () => {
 							<PartyCopy>
 								Not only do they look alike, but these two brothers have grown close
 								over the years sharing the same interests. They keep in touch the
-								most out of the family through playing video most weeks.
+								most out of the family through playing video games most weeks.
 							</PartyCopy>
 						</PartyLeftColumn>
 						<PartyRightColumn>

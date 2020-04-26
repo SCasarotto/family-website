@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "family-website-prod"
+    "default": "family-website-prod",
+    "production": "family-website-prod"
   }
 }

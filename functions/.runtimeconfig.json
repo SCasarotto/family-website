@@ -1,0 +1,6 @@
+{
+  "stripe": {
+    "token": "sk_test_hnmQJOu2lUImI3mDfNPYFCG500IlCezQJt",
+    "currency": "USD"
+  }
+}

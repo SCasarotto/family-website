@@ -16,7 +16,7 @@ export const useMessages = () => {
 				(snapshot) => {
 					setMessageArray(
 						collectionToDataArray(snapshot).sort(
-							(a, b) => b.dateCreated - a.dateCreated,
+							(a: Message, b: Message) => a.dateCreated - b.dateCreated,
 						),
 					)
 				},

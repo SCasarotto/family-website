@@ -39,16 +39,13 @@ export const saveRSVP = async (data: RSVPData) => {
 
 	try {
 		showNetworkActivity('Submitting RSVP...')
-		await firebase
-			.firestore()
-			.collection('WeddingRSVPs')
-			.add({
-				dateCreated: new Date().getTime(),
-				name,
-				foodChoice: foodChoice!.value,
-				comment,
-				status: 0,
-			})
+		await firebase.firestore().collection('WeddingRSVPs').add({
+			dateCreated: new Date().getTime(),
+			name,
+			foodChoice: foodChoice!.value,
+			comment,
+			status: 0,
+		})
 
 		hideNetworkActivity()
 		showAlert({

@@ -24,20 +24,20 @@ import {
 	TimelineDotIconWrapper,
 	TimelineRowTitle,
 	TimelineRowCopy,
-	HotelSection,
-	HotelContent,
-	HotelColumnWrapper,
-	HotelLeftColumn,
-	HotelRightColumn,
-	HotelTitle,
-	HotelCopy,
-	HotelOl,
-	HotelLi,
-	HotelLiLink,
-	HotelOtherOptionsWrapper,
-	HotelSubtitle,
-	HotelOptionsList,
-	HotelOptionsItem,
+	// HotelSection,
+	// HotelContent,
+	// HotelColumnWrapper,
+	// HotelLeftColumn,
+	// HotelRightColumn,
+	// HotelTitle,
+	// HotelCopy,
+	// HotelOl,
+	// HotelLi,
+	// HotelLiLink,
+	// HotelOtherOptionsWrapper,
+	// HotelSubtitle,
+	// HotelOptionsList,
+	// HotelOptionsItem,
 } from './styledComponents'
 import { PageWrapper } from 'components'
 import { eventDetails } from 'config/images'
@@ -98,8 +98,8 @@ export const EventDetails = () => {
 					<LocationContent>
 						<LocationTitle>Ceremony and Reception</LocationTitle>
 						<LocationCopy>
-							Please join us on Saturday, July 18th 2020 at DC Estate Winery 8877
-							State Line Rd, South Beloit, IL 61080.
+							Please join us {/*on Saturday, July 18th 2020*/} at DC Estate Winery
+							8877 State Line Rd, South Beloit, IL 61080.
 						</LocationCopy>
 						<LocationLink
 							href='https://www.dcestatewinery.com/'
@@ -161,7 +161,7 @@ export const EventDetails = () => {
 					})}
 				</TimelineContainer>
 			</TimelineSection>
-			<HotelSection>
+			{/* <HotelSection>
 				<HotelContent>
 					<HotelColumnWrapper>
 						<HotelLeftColumn>
@@ -253,7 +253,7 @@ export const EventDetails = () => {
 						</HotelOptionsList>
 					</HotelOtherOptionsWrapper>
 				</HotelContent>
-			</HotelSection>
+			</HotelSection> */}
 		</PageWrapper>
 	)
 }

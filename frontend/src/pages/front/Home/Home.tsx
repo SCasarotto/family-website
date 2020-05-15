@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React /*, { useState, useEffect }*/ from 'react'
 
 import { PageWrapper } from 'components'
 import { homePageSlider } from 'config/images'
@@ -9,78 +9,79 @@ import {
 	HeaderSlide,
 	HeaderCopyWrapper,
 	HeaderTitle,
-	CountDownWrapper,
-	CountDownColumn,
-	CountDownValue,
-	CountDownLabel,
-	COVIDButton,
+	HeaderSubtitle,
+	// CountDownWrapper,
+	// CountDownColumn,
+	// CountDownValue,
+	// CountDownLabel,
+	// COVIDButton,
 } from './styledComponents'
-import { useTEPopups } from 'react-tec'
+// import { useTEPopups } from 'react-tec'
 
-interface CountdownData {
-	seconds: number
-	minutes: number
-	hours: number
-	days: number
-}
-const countDownTo = (date: Date) => {
-	const t = date.getTime() - new Date().getTime()
+// interface CountdownData {
+// 	seconds: number
+// 	minutes: number
+// 	hours: number
+// 	days: number
+// }
+// const countDownTo = (date: Date) => {
+// 	const t = date.getTime() - new Date().getTime()
 
-	if (t < 0) {
-		return {
-			seconds: 0,
-			minutes: 0,
-			hours: 0,
-			days: 0,
-		}
-	}
-	const seconds = Math.floor((t / 1000) % 60)
-	const minutes = Math.floor((t / 1000 / 60) % 60)
-	const hours = Math.floor((t / (1000 * 60 * 60)) % 24)
-	const days = Math.floor(t / (1000 * 60 * 60 * 24))
+// 	if (t < 0) {
+// 		return {
+// 			seconds: 0,
+// 			minutes: 0,
+// 			hours: 0,
+// 			days: 0,
+// 		}
+// 	}
+// 	const seconds = Math.floor((t / 1000) % 60)
+// 	const minutes = Math.floor((t / 1000 / 60) % 60)
+// 	const hours = Math.floor((t / (1000 * 60 * 60)) % 24)
+// 	const days = Math.floor(t / (1000 * 60 * 60 * 24))
 
-	return {
-		seconds,
-		minutes,
-		hours,
-		days,
-	}
-}
-const weddingStartDate = new Date('2020-07-18T16:30:00')
+// 	return {
+// 		seconds,
+// 		minutes,
+// 		hours,
+// 		days,
+// 	}
+// }
+// const weddingStartDate = new Date('2020-07-18T16:30:00')
 
-const CountDown = () => {
-	const [countDown, setCountDown] = useState<CountdownData>(countDownTo(weddingStartDate))
+// const CountDown = () => {
+// 	const [countDown, setCountDown] = useState<CountdownData>(countDownTo(weddingStartDate))
 
-	useEffect(() => {
-		const intervalId = setInterval(() => setCountDown(countDownTo(weddingStartDate)), 1000)
-		return () => {
-			clearInterval(intervalId)
-		}
-	}, [])
-	return (
-		<CountDownWrapper>
-			<CountDownColumn>
-				<CountDownValue>{countDown.days}</CountDownValue>
-				<CountDownLabel>Days</CountDownLabel>
-			</CountDownColumn>
-			<CountDownColumn>
-				<CountDownValue>{countDown.hours}</CountDownValue>
-				<CountDownLabel>Hours</CountDownLabel>
-			</CountDownColumn>
-			<CountDownColumn>
-				<CountDownValue>{countDown.minutes}</CountDownValue>
-				<CountDownLabel>Minutes</CountDownLabel>
-			</CountDownColumn>
-			<CountDownColumn>
-				<CountDownValue>{countDown.seconds}</CountDownValue>
-				<CountDownLabel>Seconds</CountDownLabel>
-			</CountDownColumn>
-		</CountDownWrapper>
-	)
-}
+// 	useEffect(() => {
+// 		const intervalId = setInterval(() => setCountDown(countDownTo(weddingStartDate)), 1000)
+// 		return () => {
+// 			clearInterval(intervalId)
+// 		}
+// 	}, [])
+// 	return (
+// 		<CountDownWrapper>
+// 			<CountDownColumn>
+// 				<CountDownValue>{countDown.days}</CountDownValue>
+// 				<CountDownLabel>Days</CountDownLabel>
+// 			</CountDownColumn>
+// 			<CountDownColumn>
+// 				<CountDownValue>{countDown.hours}</CountDownValue>
+// 				<CountDownLabel>Hours</CountDownLabel>
+// 			</CountDownColumn>
+// 			<CountDownColumn>
+// 				<CountDownValue>{countDown.minutes}</CountDownValue>
+// 				<CountDownLabel>Minutes</CountDownLabel>
+// 			</CountDownColumn>
+// 			<CountDownColumn>
+// 				<CountDownValue>{countDown.seconds}</CountDownValue>
+// 				<CountDownLabel>Seconds</CountDownLabel>
+// 			</CountDownColumn>
+// 		</CountDownWrapper>
+// 	)
+// }
 
 export const Home = () => {
-	const { showAlert } = useTEPopups()
+	// const { showAlert } = useTEPopups()
 
 	return (
 		<PageWrapper footer={false}>
@@ -103,8 +104,12 @@ export const Home = () => {
 				</HeaderSlider>
 				<HeaderCopyWrapper>
 					<HeaderTitle>We're Engaged!</HeaderTitle>
-					<CountDown />
-					<COVIDButton
+					<HeaderSubtitle>
+						Our wedding has been postponed to 2021.
+						<br /> We will follow up with information soon.
+					</HeaderSubtitle>
+					{/* <CountDown /> */}
+					{/* <COVIDButton
 						onClick={() =>
 							showAlert({
 								title: 'COVID-19 Update',
@@ -127,7 +132,7 @@ export const Home = () => {
 						}
 					>
 						COVID-19 Update
-					</COVIDButton>
+					</COVIDButton> */}
 				</HeaderCopyWrapper>
 			</HeaderWrapper>
 		</PageWrapper>

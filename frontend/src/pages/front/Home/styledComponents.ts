@@ -72,6 +72,27 @@ export const HeaderTitle = styled.h1`
 		font-size: 44px;
 	}
 `
+export const HeaderSubtitle = styled.h2`
+	font-size: 28px;
+	color: white;
+	line-height: 1.25;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+	color: #ffffff;
+	font-weight: 500;
+
+	@media only screen and (max-width: 900px) {
+		font-size: 22px;
+	}
+	@media only screen and (max-width: 500px) {
+		font-size: 20px;
+		br {
+			display: none;
+		}
+	}
+`
 export const CountDownWrapper = styled.div`
 	display: flex;
 	justify-content: center;

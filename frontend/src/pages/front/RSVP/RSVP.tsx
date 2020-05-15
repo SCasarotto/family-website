@@ -30,7 +30,7 @@ import {
 	MessageBoardName,
 } from './styledComponents'
 import { /*saveRSVP,*/ saveMessage } from './requests'
-import { useMessages } from 'pages/admin/Messages/hooks'
+import { useMessages } from './hooks'
 
 export const RSVP = () => {
 	const popupFunctions = useTEPopups()

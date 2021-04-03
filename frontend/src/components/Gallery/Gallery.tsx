@@ -22,12 +22,12 @@ export const Gallery: React.FC<Props> = (props) => {
 					.map((data, index) => (
 						<GalleryThumbnail
 							src={data.thumb}
-							alt={`${altPrefix ? altPrefix : 'gallery'} ${currentPage * pageSize +
-								index +
-								1}`}
-							key={`${altPrefix ? altPrefix : 'gallery'}_${currentPage * pageSize +
-								index +
-								1}`}
+							alt={`${altPrefix ? altPrefix : 'gallery'} ${
+								currentPage * pageSize + index + 1
+							}`}
+							key={`${altPrefix ? altPrefix : 'gallery'}_${
+								currentPage * pageSize + index + 1
+							}`}
 							onClick={() => {
 								setLightBoxIndex(index + (currentPage - 1) * pageSize)
 								setLightBoxOpen(true)
@@ -64,6 +64,8 @@ export const Gallery: React.FC<Props> = (props) => {
 								download: data.full,
 								source: data.full,
 								thumbnail: data.thumb,
+								// Without this it shows undefined
+								caption: '',
 							}))}
 							currentIndex={lightBoxIndex}
 							trackProps={{

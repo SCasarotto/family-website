@@ -1,16 +1,16 @@
 import React, { createContext, useState, useEffect } from 'react'
-import firebase, { User } from 'firebase/app'
+import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/firestore'
 
 interface AppContextData {
-	user?: User
+	user?: firebase.User
 	userLoaded?: boolean
 }
 export const AppContext = createContext<AppContextData>({})
 
 export const AppProvider: React.FC = (props) => {
-	const [user, setUser] = useState<User | undefined>(undefined)
+	const [user, setUser] = useState<firebase.User | undefined>(undefined)
 	const [userLoaded, setUserLoaded] = useState(false)
 
 	useEffect(() => {

@@ -1,10 +1,10 @@
 import React, { createContext, useState } from 'react'
 
-interface TitleBarContext {
+interface TitleBarContextData {
 	barTitle: string
 	setBarTitle: React.Dispatch<React.SetStateAction<string>>
 }
-export const TitleBarContext = createContext<TitleBarContext>({
+export const TitleBarContext = createContext<TitleBarContextData>({
 	barTitle: '',
 	setBarTitle: () => {},
 })

@@ -459,7 +459,7 @@ import courtney_stuart_engaged_0138 from 'assets/images/gallery/processed/courtn
 import dcEstate from 'assets/images/eventDetails/dcEstate.jpg'
 
 // Registry
-import williamsSonoma from 'assets/images/registery/94835d376a6cfa431cdb61d1bd67f5ae.gif'
+import williamsSonoma from 'assets/images/registery/williamsSonoma.gif'
 import amazon from 'assets/images/registery/amazon.png'
 
 // Single Photos

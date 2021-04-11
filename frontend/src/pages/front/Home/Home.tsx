@@ -14,9 +14,9 @@ import {
 	CountDownColumn,
 	CountDownValue,
 	CountDownLabel,
-	// COVIDButton,
+	COVIDButton,
 } from './styledComponents'
-// import { useTEPopups } from 'react-tec'
+import { useTEPopups } from 'react-tec'
 
 interface CountdownData {
 	seconds: number
@@ -81,7 +81,7 @@ const CountDown = () => {
 }
 
 export const Home = () => {
-	// const { showAlert } = useTEPopups()
+	const { showAlert } = useTEPopups()
 
 	return (
 		<PageWrapper footer={false}>
@@ -103,36 +103,32 @@ export const Home = () => {
 					))}
 				</HeaderSlider>
 				<HeaderCopyWrapper>
-					<HeaderTitle>We're Engaged!</HeaderTitle>
-					{/* <HeaderSubtitle>
-						Our wedding has been postponed to 2021.
-						<br /> We will follow up with information soon.
-					</HeaderSubtitle> */}
+					<HeaderTitle>We're Getting Married!</HeaderTitle>
+
 					<CountDown />
-					{/* <COVIDButton
+					<COVIDButton
 						onClick={() =>
 							showAlert({
-								title: 'COVID-19 Update',
+								title: 'Wedding Update',
 								//@ts-ignore
 								message: (
 									<>
-										Although we are excited to celebrate our wedding, COVID-19
-										has posed challenges on having large groups of people
-										together. We are assessing the status of the wedding weekly,
-										so please check our website often for the most up to date
-										information. We are working closely with our venue and
-										vendors to do everything we can to ensure the safety and
-										care of our guests.
+										In an effort to keep the wedding as safe as possible, we
+										made the decision to have a smaller wedding than we
+										originally planned. Although it will not be the same without
+										everyone, we would love to reconnect and get together in the
+										near future with those who are unable to attend.
 										<br />
-										<br /> We hope everyone is safe and well. ❤️
+										<br /> We really appreciate everyone’s understanding,
+										<br /> stay safe and take care.
 									</>
 								),
 								buttonTitle: 'Close',
 							})
 						}
 					>
-						COVID-19 Update
-					</COVIDButton> */}
+						Wedding Update
+					</COVIDButton>
 				</HeaderCopyWrapper>
 			</HeaderWrapper>
 		</PageWrapper>

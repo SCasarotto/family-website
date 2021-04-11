@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { TEForm } from 'react-tec'
 import { pageHeaders } from 'config/images'
 
 export const Header = styled.div`
@@ -29,6 +29,55 @@ export const HeaderTitle = styled.h1`
 	}
 	@media only screen and (max-width: 500px) {
 		font-size: 44px;
+	}
+`
+
+export const PasswordForm = styled(TEForm)`
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	padding: 30px;
+`
+export const PasswordTitle = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 36px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+	text-align: center;
+	@media only screen and (max-width: 1000px) {
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 28px;
+	}
+	@media only screen and (max-width: 600px) {
+		text-align: center;
+		font-size: 32px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 26px;
+	}
+`
+export const PasswordSubtitle = styled.p`
+	margin-top: 0px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 1.2;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 350px;
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 16px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 14px;
+		max-width: 300px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 12px;
 	}
 `
 
@@ -390,7 +439,7 @@ export const HotelCopy = styled.p`
 		font-size: 14px;
 	}
 `
-export const HotelOl = styled.ol``
+export const HotelUl = styled.ul``
 export const HotelLi = styled.li`
 	font-size: 18px;
 	line-height: 1.25;

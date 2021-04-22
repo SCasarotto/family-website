@@ -37,7 +37,7 @@ export const RSVPSection = styled.div`
 	padding-bottom: 50px;
 `
 export const RSVPContainer = styled.div`
-	max-width: 900px;
+	max-width: 800px;
 	margin: 0px auto;
 	padding-left: 30px;
 	padding-right: 30px;
@@ -70,8 +70,7 @@ export const RSVPCopy = styled.p`
 	margin-bottom: 30px;
 	color: ${(props) => props.theme.darkerGray};
 	text-align: center;
-	/* max-width: 650px; ADD ME BACK ONCE WE SHOW RSVP STUFF */
-	max-width: 700px;
+	max-width: 650px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -83,6 +82,41 @@ export const RSVPCopy = styled.p`
 	}
 	@media only screen and (max-width: 600px) {
 		max-width: 450px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 14px;
+	}
+`
+
+export const RSVPFormSectionTitle = styled.p`
+	font-size: 24px;
+	line-height: 1.5;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	color: ${(props) => props.theme.primary};
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 22px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: 600px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 450px) {
+		font-size: 16px;
+	}
+`
+export const RSVPFormSectionCopy = styled.p`
+	font-size: 18px;
+	line-height: 1.2;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: ${(props) => props.theme.darkerGray};
+
+	@media only screen and (max-width: 600px) {
+		font-size: 16px;
 	}
 	@media only screen and (max-width: 450px) {
 		font-size: 14px;

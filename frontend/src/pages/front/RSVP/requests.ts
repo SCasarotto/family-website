@@ -7,10 +7,13 @@ interface RSVPData {
 	name: string
 	foodChoice?: { value: string; label: string }
 	comment: string
+	toast: string
+	vaccinated: string
+	willingToTest: string
 	popupFunctions: useTEPopupsFunctions
 }
 export const saveRSVP = async (data: RSVPData) => {
-	const { name, foodChoice, comment, popupFunctions } = data
+	const { name, foodChoice, comment, toast, vaccinated, willingToTest, popupFunctions } = data
 	const { showNetworkActivity, hideNetworkActivity, showAlert } = popupFunctions
 
 	const validatorConstraints: { [key: string]: any } = {
@@ -24,6 +27,24 @@ export const saveRSVP = async (data: RSVPData) => {
 				allowEmpty: false,
 			},
 		},
+		toast: {
+			presence: {
+				allowEmpty: false,
+			},
+		},
+		vaccinated: {
+			presence: {
+				allowEmpty: false,
+			},
+		},
+		willingToTest:
+			vaccinated === 'No'
+				? {
+						presence: {
+							allowEmpty: false,
+						},
+				  }
+				: undefined,
 	}
 	const validationResponse = validate(data, validatorConstraints)
 	if (validationResponse) {
@@ -40,10 +61,13 @@ export const saveRSVP = async (data: RSVPData) => {
 	try {
 		showNetworkActivity('Submitting RSVP...')
 		await firebase.firestore().collection('WeddingRSVPs').add({
-			dateCreated: new Date().getTime(),
+			dateCreated: Date.now(),
 			name,
 			foodChoice: foodChoice!.value,
 			comment,
+			toast,
+			vaccinated,
+			willingToTest,
 			status: 0,
 		})
 

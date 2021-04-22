@@ -29,22 +29,40 @@ export const EditRSVPPopup = (props: Props) => {
 	const [foodChoice, setFoodChoice] = useState<{ label: string; value: string }>()
 	const [comment, setComment] = useState('')
 	const [status, setStatus] = useState<number>()
+	const [toast, setToast] = useState('')
+	const [vaccinated, setVaccinated] = useState('')
+	const [willingToTest, setWillingToTest] = useState('')
 
 	useEffect(() => {
 		if (editRSVP) {
-			const { dateCreated, name, foodChoice, comment, status } = editRSVP
+			const {
+				dateCreated,
+				name,
+				foodChoice,
+				comment,
+				status,
+				toast,
+				vaccinated,
+				willingToTest,
+			} = editRSVP
 
 			setDateCreated(dateCreated ? new Date(dateCreated) : undefined)
 			setName(name)
 			setFoodChoice({ label: foodChoice, value: foodChoice })
 			setComment(comment)
 			setStatus(status)
+			setToast(toast)
+			setVaccinated(vaccinated)
+			setWillingToTest(willingToTest)
 		} else {
 			setDateCreated(undefined)
 			setName('')
 			setFoodChoice(undefined)
 			setComment('')
 			setStatus(undefined)
+			setToast('')
+			setVaccinated('')
+			setWillingToTest('')
 		}
 	}, [editRSVP])
 
@@ -57,6 +75,9 @@ export const EditRSVPPopup = (props: Props) => {
 				foodChoice: foodChoice?.value,
 				comment,
 				status,
+				toast,
+				vaccinated,
+				willingToTest,
 				popupFunctions,
 			}
 
@@ -66,6 +87,9 @@ export const EditRSVPPopup = (props: Props) => {
 			setFoodChoice(undefined)
 			setComment('')
 			setStatus(undefined)
+			setToast('')
+			setVaccinated('')
+			setWillingToTest('')
 			onSubmit()
 		} catch (e) {
 			console.log(e)
@@ -100,10 +124,19 @@ export const EditRSVPPopup = (props: Props) => {
 				title='Food Choice'
 				value={foodChoice}
 				options={[
-					{ label: 'Prime Rib', value: 'Prime Rib' },
-					{ label: 'Chicken', value: 'Chicken' },
-					{ label: 'Fish', value: 'Fish' },
-					{ label: 'Pasta', value: 'Pasta' },
+					{ label: '8 oz Prime Rib', value: '8 oz Prime Rib' },
+					{
+						label: 'Atlantic Salmon with Chardonnay Dill Sauce',
+						value: 'Atlantic Salmon with Chardonnay Dill Sauce',
+					},
+					{
+						label: 'Herb Chicken with Citrus Butter Sauce',
+						value: 'Herb Chicken with Citrus Butter Sauce',
+					},
+					{
+						label: 'Linguini Alfredo and Asiago ',
+						value: 'Linguini Alfredo and Asiago ',
+					},
 					{ label: 'Mac and Cheese', value: 'Mac and Cheese' },
 					{ label: 'Other (please leave a comment below)', value: 'other' },
 				]}
@@ -127,6 +160,33 @@ export const EditRSVPPopup = (props: Props) => {
 				title='Comment'
 				value={comment}
 				onChange={(e) => setComment(e.target.value)}
+			/>
+			<TESegmentedGroup
+				labelForKey='toast'
+				title='Toast'
+				buttonArray={['Yes', 'No']}
+				checkedValue={toast}
+				onChange={(e) => setToast(e.target.value)}
+				required
+				inline
+			/>
+			<TESegmentedGroup
+				labelForKey='vacinated'
+				title='Vaccinated'
+				buttonArray={['Yes', 'No']}
+				checkedValue={vaccinated}
+				onChange={(e) => setVaccinated(e.target.value)}
+				required
+				inline
+			/>
+			<TESegmentedGroup
+				labelForKey='willingToTest'
+				title='Willing To Test'
+				buttonArray={['Yes', 'No']}
+				checkedValue={willingToTest}
+				onChange={(e) => setWillingToTest(e.target.value)}
+				required
+				inline
 			/>
 		</TEPopupForm>
 	)

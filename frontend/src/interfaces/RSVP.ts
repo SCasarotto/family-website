@@ -5,4 +5,7 @@ export interface RSVP {
 	foodChoice: string
 	comment: string
 	status: number
+	toast: string
+	vaccinated: string
+	willingToTest: string
 }

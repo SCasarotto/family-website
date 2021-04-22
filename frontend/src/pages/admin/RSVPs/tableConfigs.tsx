@@ -4,13 +4,13 @@ import { TETableButton } from 'components'
 
 import { filterDateColumn, convertToDateTimeShort } from 'helpers'
 import { RSVP } from 'interfaces'
-import { Filter } from 'react-table'
+import { Column, Filter } from 'react-table'
 
 interface Args {
 	handleEdit(message: RSVP): void
 	handleDelete(uid: string): void
 }
-export const tableColumns = ({ handleEdit, handleDelete }: Args) => [
+export const tableColumns = ({ handleEdit, handleDelete }: Args): Column[] => [
 	{
 		id: 'dateCreated',
 		Header: 'Date Created',
@@ -30,6 +30,18 @@ export const tableColumns = ({ handleEdit, handleDelete }: Args) => [
 	{
 		Header: 'Comment',
 		accessor: 'comment',
+	},
+	{
+		Header: 'Toast',
+		accessor: 'toast',
+	},
+	{
+		Header: 'Vaccinated',
+		accessor: 'vaccinated',
+	},
+	{
+		Header: 'Willing To Test',
+		accessor: 'willingToTest',
 	},
 	{
 		id: 'status',

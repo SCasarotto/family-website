@@ -9,10 +9,23 @@ interface Data {
 	foodChoice?: string
 	comment: string
 	status?: number
+	toast: string
+	vaccinated: string
+	willingToTest: string
 	popupFunctions: useTEPopupsFunctions
 }
 export const saveRSVP = async (data: Data) => {
-	const { uid, name, foodChoice, comment, status, popupFunctions } = data
+	const {
+		uid,
+		name,
+		foodChoice,
+		comment,
+		status,
+		toast,
+		vaccinated,
+		willingToTest,
+		popupFunctions,
+	} = data
 	const { showNetworkActivity, hideNetworkActivity, showAlert } = popupFunctions
 
 	const validatorConstraints: { [key: string]: any } = {
@@ -31,6 +44,24 @@ export const saveRSVP = async (data: Data) => {
 				allowEmpty: false,
 			},
 		},
+		toast: {
+			presence: {
+				allowEmpty: false,
+			},
+		},
+		vaccinated: {
+			presence: {
+				allowEmpty: false,
+			},
+		},
+		willingToTest:
+			vaccinated === 'No'
+				? {
+						presence: {
+							allowEmpty: false,
+						},
+				  }
+				: undefined,
 	}
 	const validationResponse = validate(data, validatorConstraints)
 	if (validationResponse) {
@@ -50,7 +81,7 @@ export const saveRSVP = async (data: Data) => {
 			.firestore()
 			.collection('WeddingRSVPs')
 			.doc(uid)
-			.update({ name, foodChoice, comment, status })
+			.update({ name, foodChoice, comment, status, toast, vaccinated, willingToTest })
 
 		hideNetworkActivity()
 		showAlert({

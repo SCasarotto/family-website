@@ -37,7 +37,19 @@ if (settings.FIREBASE_PERFORMANCE) {
 
 const Root = () => {
 	return (
-		<TEAppWrapper theme={{ primary: '#5a2d36' }}>
+		<TEAppWrapper
+			theme={{
+				primary: '#5a2d36',
+				white: '#FFFFFF',
+				lightestGray: '#f3f3f3',
+				lighterGray: '#f0f0f0',
+				lightGray: '#dfdfdf',
+				gray: '#b8b8b8',
+				darkGray: '#7e7e7e',
+				darkerGray: '#464646',
+				black: '#181d20',
+			}}
+		>
 			<AppProvider>
 				<SideNavActiveProvider>
 					<TitleBarProvider>

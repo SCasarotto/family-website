@@ -38,7 +38,7 @@ export const RSVP = () => {
 	const popupFunctions = useTEPopups()
 	const { messageArray } = useMessages()
 	const [rsvpName, setRSVPName] = useState('')
-	const [rsvpFood, setRSVPFood] = useState<{ value: string; label: string }>()
+	const [rsvpFood, setRSVPFood] = useState<{ value: string; label: string } | null>(null)
 	const [rsvpComment, setRSVPComment] = useState('')
 	const [rsvpToast, setRSVPToast] = useState('')
 	const [rsvpVaccinated, setRSVPVaccinated] = useState('')
@@ -70,7 +70,7 @@ export const RSVP = () => {
 			}
 			await saveRSVP(data)
 			setRSVPName('')
-			setRSVPFood(undefined)
+			setRSVPFood(null)
 			setRSVPComment('')
 			setRSVPToast('')
 			setRSVPVaccinated('')
@@ -78,6 +78,9 @@ export const RSVP = () => {
 			setRSVPPassword('')
 		} catch (e) {
 			console.log(e)
+			alert(
+				'An error occured while attempting to save your RSVP. If this continues to occur reach out to Stuart or Courtney. Thanks!',
+			)
 		}
 	}
 	const handleSubmitMessgae = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -95,6 +98,9 @@ export const RSVP = () => {
 			setShowMessage('Displayed publicly on the website.')
 		} catch (e) {
 			console.log(e)
+			alert(
+				'An error occured while attempting to submit your message. If this continues to occur reach out to Stuart or Courtney. Thanks!',
+			)
 		}
 	}
 
@@ -113,9 +119,6 @@ export const RSVP = () => {
 						will be joining us and what you will be eating.
 					</RSVPCopy>
 					<RSVPCopy>Please enter an RSVP for each individual.</RSVPCopy>
-					{/* <RSVPCopy>
-						Once invitations go out, you can return to this page and submit your RSVP.
-					</RSVPCopy> */}
 					<TEForm onSubmit={handleSubmitRSVP}>
 						<TEInputRow
 							labelForKey='rsvpName'
@@ -147,9 +150,10 @@ export const RSVP = () => {
 								{ label: 'Other (please leave a comment below)', value: 'other' },
 							]}
 							onChange={(option) =>
-								setRSVPFood(option as undefined | { value: string; label: string })
+								setRSVPFood(option as null | { value: string; label: string })
 							}
 							required
+							isClearable
 							rowSize='half'
 							last
 						/>

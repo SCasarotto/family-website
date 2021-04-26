@@ -5,7 +5,7 @@ import { useTEPopupsFunctions } from 'react-tec'
 
 interface RSVPData {
 	name: string
-	foodChoice?: { value: string; label: string }
+	foodChoice: { value: string; label: string } | null
 	comment: string
 	toast: string
 	vaccinated: string

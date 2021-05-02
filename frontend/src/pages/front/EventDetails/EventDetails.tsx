@@ -34,6 +34,7 @@ import {
 	HotelLeftColumn,
 	HotelRightColumn,
 	HotelTitle,
+	HotelName,
 	HotelCopy,
 	HotelUl,
 	HotelLi,
@@ -156,8 +157,8 @@ export const EventDetails = () => {
 							<LocationContent>
 								<LocationTitle>Ceremony and Reception</LocationTitle>
 								<LocationCopy>
-									Please join us {/*on Saturday, July 18th 2020*/} at DC Estate
-									Winery 8877 State Line Rd, South Beloit, IL 61080.
+									Please join us on Saturday, July 10th 2021 at DC Estate Winery
+									8877 State Line Rd, South Beloit, IL 61080.
 								</LocationCopy>
 								<LocationLink
 									href='https://www.dcestatewinery.com/'
@@ -239,10 +240,11 @@ export const EventDetails = () => {
 								</HotelLeftColumn>
 								<HotelRightColumn>
 									<HotelTitle>Hotel Information</HotelTitle>
+									<HotelName>Hampton Inn Beloit (Hilton properties)</HotelName>
 									<HotelCopy>
-										We have secured a room block at the Hampton Inn Beloit
-										(Hilton properties) at 2700 Cranston Rd, Beloit, WI 53511,
-										for both Friday, July 9th and Saturday, July 10th.{' '}
+										2700 Cranston Rd, Beloit, WI 53511, for both Friday, July
+										9th and Saturday, July 10th. Transportation will pick up and
+										drop off here.{' '}
 										<b>
 											<HotelLiLink href='https://www.hilton.com/en/book/reservation/deeplink/?&ctyhocn=JVLCRHX&groupCode=CHHTCW&arrival=20210709&departure=20210711&cid=OM,WW,HILTONLINK,en,DirectLink&fromId=HILTONLINKDIRECT'>
 												Click here to book a room in our room block.
@@ -266,8 +268,40 @@ export const EventDetails = () => {
 											<b>Check Out:</b> 12:00pm
 										</HotelLi>
 									</HotelUl>
+									<HotelName>Fairfield Inn & Suites Beloit</HotelName>
 									<HotelCopy>
-										If the room block fills or if you wish to stay elsewhere,
+										2784 Milwaukee Road Beloit, Wisconsin 53511, for both
+										Friday, July 9th and Saturday, July 10th. Transportation
+										will pick up and drop off next door at the Hampton Inn.{' '}
+										<b>
+											<HotelLiLink
+												href='https://www.marriott.com/event-reservations/reservation-link.mi?id=1619709647672&key=GRP&app=resvlink
+https://www.marriott.com/event-reservations/reservation-link.mi?id=1619709647672&key=GRP&app=resvlink'
+											>
+												Click the following link to reserve a room with the
+												Fairfield Inn.
+											</HotelLiLink>
+										</b>
+									</HotelCopy>
+									<HotelUl>
+										<HotelLi>
+											<b>Group Name:</b> Tate/Casarotto Wedding Group
+										</HotelLi>
+										<HotelLi>
+											<b>Room Block Rate:</b> $144 - 179 per night
+										</HotelLi>
+										<HotelLi>
+											<b>Book By:</b> 6/5/2021
+										</HotelLi>
+										<HotelLi>
+											<b>Check In:</b> 3:00pm
+										</HotelLi>
+										<HotelLi>
+											<b>Check Out:</b> 12:00pm
+										</HotelLi>
+									</HotelUl>
+									<HotelCopy>
+										If the room blocks fill or if you wish to stay elsewhere,
 										there are many hotel options to choose from close by.
 									</HotelCopy>
 								</HotelRightColumn>
@@ -275,15 +309,6 @@ export const EventDetails = () => {
 							<HotelOtherOptionsWrapper>
 								<HotelSubtitle>Other Hotel Options</HotelSubtitle>
 								<HotelOptionsList>
-									<HotelOptionsItem>
-										Fairfield Inn & Suites by Marriott Beloit
-										<br />
-										2784 Milwaukee Rd, Beloit, WI 53511
-										<br />
-										<HotelLiLink href='tel:+16083652200'>
-											(608) 365-2200
-										</HotelLiLink>
-									</HotelOptionsItem>
 									<HotelOptionsItem>
 										Quality Inn
 										<br />

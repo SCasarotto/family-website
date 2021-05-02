@@ -417,11 +417,29 @@ export const HotelTitle = styled.h2`
 		font-size: 26px;
 	}
 `
+export const HotelName = styled.h2`
+	margin-top: 0px;
+	margin-bottom: 5px;
+	font-size: 22px;
+	line-height: 1.2;
+	color: ${(props) => props.theme.primary};
+
+	@media only screen and (max-width: 1000px) {
+		font-size: 20px;
+	}
+	@media only screen and (max-width: 800px) {
+		font-size: 18px;
+	}
+	@media only screen and (max-width: 700px) {
+		text-align: center;
+		font-size: 16px;
+	}
+`
 export const HotelCopy = styled.p`
 	font-size: 18px;
 	line-height: 1.5;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	color: ${(props) => props.theme.darkerGray};
 
 	@media only screen and (max-width: 1000px) {
@@ -439,12 +457,15 @@ export const HotelCopy = styled.p`
 		font-size: 14px;
 	}
 `
-export const HotelUl = styled.ul``
+export const HotelUl = styled.ul`
+	margin-top: 0px;
+	margin-bottom: 15px;
+`
 export const HotelLi = styled.li`
 	font-size: 18px;
 	line-height: 1.25;
 	margin-top: 0px;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 	color: ${(props) => props.theme.darkerGray};
 
 	@media only screen and (max-width: 1000px) {
@@ -505,7 +526,7 @@ export const HotelOptionsItem = styled.li`
 	line-height: 1.5;
 	color: ${(props) => props.theme.darkerGray};
 	width: 100%;
-	max-width: 375px;
+	max-width: 500px;
 
 	@media only screen and (max-width: 1000px) {
 		max-width: 350px;

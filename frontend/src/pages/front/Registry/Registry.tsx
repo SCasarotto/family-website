@@ -157,9 +157,6 @@ export const Registry = () => {
 			</DonationSection>
 			<GiftRegistrySection>
 				<GiftRegistryContainer>
-					<GiftRegistryCopy>
-						Check back here closer to the new wedding date for registry information
-					</GiftRegistryCopy>
 					<GiftRegistryTitle>Gift Registry</GiftRegistryTitle>
 					<GiftRegistryCopy>
 						Below are locations we have registered with.

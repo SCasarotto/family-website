@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import Slider from 'react-slick'
-import { TEButton } from 'react-tec'
 
 export const HeaderWrapper = styled.div`
 	position: relative;
@@ -52,7 +51,6 @@ export const HeaderCopyWrapper = styled.div`
 	left: 50%;
 	width: 100%;
 	transform: translate(-50%, -50%);
-	/* pointer-events: none; */
 	padding: 0px 20px;
 `
 export const HeaderTitle = styled.h1`
@@ -73,7 +71,7 @@ export const HeaderTitle = styled.h1`
 	}
 `
 export const HeaderSubtitle = styled.h2`
-	font-size: 28px;
+	font-size: 26px;
 	color: white;
 	line-height: 1.25;
 	text-align: center;
@@ -82,102 +80,16 @@ export const HeaderSubtitle = styled.h2`
 	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 	color: #ffffff;
 	font-weight: 500;
-
-	@media only screen and (max-width: 900px) {
-		font-size: 22px;
-	}
-	@media only screen and (max-width: 500px) {
-		font-size: 20px;
-		br {
-			display: none;
-		}
-	}
-`
-export const CountDownWrapper = styled.div`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	@media only screen and (max-width: 500px) {
-		flex-wrap: wrap;
-	}
-`
-export const CountDownColumn = styled.div`
-	margin: 0px 15px;
-
-	@media only screen and (max-width: 900px) {
-		margin: 0px 10px;
-	}
-	@media only screen and (max-width: 500px) {
-		margin: 10px 6px;
-	}
-`
-export const CountDownValue = styled.span`
-	display: block;
-	width: 100%;
-	margin-bottom: 15px;
-	color: ${(props) => props.theme.white};
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-	border: 1px solid rgba(255, 255, 255, 0.75);
-	padding: 15px 30px;
-	font-size: 24px;
-	font-weight: 500;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-
-	@media only screen and (max-width: 900px) {
-		font-size: 20px;
-		padding: 10px 25px;
-	}
-	@media only screen and (max-width: 500px) {
-		font-size: 18px;
-		padding: 8px 20px;
-		flex-wrap: wrap;
-	}
-`
-export const CountDownLabel = styled.span`
-	display: block;
-	width: 100%;
-	color: ${(props) => props.theme.white};
-	font-size: 16px;
-	font-weight: 400;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-
-	@media only screen and (max-width: 900px) {
-		font-size: 15px;
-	}
-	@media only screen and (max-width: 500px) {
-		font-size: 14px;
-	}
-`
-
-export const COVIDButton = styled(TEButton)`
-	max-width: 300px;
+	max-width: 550px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-	border: 1px solid rgba(255, 255, 255, 0.65);
-	color: ${(props) => props.theme.white};
-	font-size: 24px;
-	font-weight: 700;
-	text-align: center;
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-	margin-top: 50px;
-	padding: 15px 30px;
-	line-height: 1.25;
 
 	@media only screen and (max-width: 900px) {
-		padding: 12px 25px;
 		font-size: 22px;
-		text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
-		max-width: 250px;
-		margin-top: 40px;
+		max-width: 450px;
 	}
 	@media only screen and (max-width: 500px) {
-		margin-top: 30px;
-		padding: 10px 20px;
 		font-size: 20px;
+		max-width: none;
 	}
 `
